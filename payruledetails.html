@@ -32,7 +32,7 @@
 
                     <!-- Logo container-->
                     <div class="logo">
-                        <a href="index.html" class="logo">
+                        <a href="dashboard.html" class="logo">
                            <img src="assets/images/logo.png">
                         </a>
                        
@@ -58,9 +58,9 @@
                             </li>
 
 
-                            <li class="list-inline-item active"><a href="index.html">Dashboard</a></li>
+                            <li class="list-inline-item"><a href="dashboard.html">Dashboard</a></li>
                             <li class="list-inline-item"><a href="admin-deals.html">Deals</a></li>
-                            <li class="list-inline-item"><a href="payrule.html" class="active">Pay Rules</a></li>
+                            <li class="list-inline-item active"><a href="payrule.html">Pay Rules</a></li>
                             <li class="list-inline-item"><a href="payrulereport.html">Reports</a></li>
                             <li class="list-inline-item"><a href="#">Help</a></li>
                             <li class="list-inline-item dropdown notification-list">
@@ -136,7 +136,7 @@
 
                                     
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <a href="login.html" class="dropdown-item notify-item">
                                         <i class="ion-log-in"></i> <span>Logout</span>
                                     </a>
                                 </div>
@@ -196,12 +196,21 @@
                            </select>
                         </div>
                      </div>
-                     <div class="row-padding">
-                        <div class="col-lg-12">
-                           <label for="usr" >Pay Rule Name<span  class="red">*</span></label>
-                           <input type="text" class="form-control " placeholder="Pay Rule Name" disabled="disabled">
-                        </div>
-                     </div>
+                     <div class="row-padding display-flex">
+                  <div class="col-lg-6">
+                    <label for="usr" >Bond Scenario<span  class="red">*</span></label>
+                    <select class="form-control" id="sel1"  disabled="disabled">
+                      <option>Bond Scenario</option>
+                      <option>Base Scenario</option>
+                      <option>Actual Scenario</option>
+                      <option>Stress Scenario</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="usr" >Pay Rule Name<span  class="red">*</span></label>
+                    <input type="text" class="form-control " placeholder="Pay Rule Name" disabled>
+                  </div>
+                </div>
                   </div>
                   <div class="col-lg-6 deal-row" >
                      <label for="usr" >Rule Description<span  class="red">*</span></label>
