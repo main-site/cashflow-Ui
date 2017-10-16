@@ -32,7 +32,7 @@
 
                     <!-- Logo container-->
                     <div class="logo">
-                        <a href="index.html" class="logo">
+                        <a href="dashboard.html" class="logo">
                            <img src="assets/images/logo.png">
                         </a>
                        
@@ -58,9 +58,9 @@
                             </li>
 
 
-                            <li class="list-inline-item active"><a href="index.html">Dashboard</a></li>
+                            <li class="list-inline-item "><a href="dashboard.html">Dashboard</a></li>
                             <li class="list-inline-item"><a href="admin-deals.html">Deals</a></li>
-                            <li class="list-inline-item"><a href="payrule.html" class="active">Pay Rules</a></li>
+                            <li class="list-inline-item active"><a href="payrule.html">Pay Rules</a></li>
                             <li class="list-inline-item"><a href="payrulereport.html">Reports</a></li>
                             <li class="list-inline-item"><a href="#">Help</a></li>
                             <li class="list-inline-item dropdown notification-list">
@@ -136,7 +136,7 @@
 
                                     
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <a href="login.html" class="dropdown-item notify-item">
                                         <i class="ion-log-in"></i> <span>Logout</span>
                                     </a>
                                 </div>
@@ -171,44 +171,40 @@
                      <a href="payruleutility.html"><button type="button" class="btn btn-light deal-margin">Utility</button></a>
                      <a href="addstatement.html"><button type="button" class="btn btn-light deal-margin">Pay Statement</button></a>
                      <a href="addpayrule.html"><button type="button" class="btn btn-light deal-margin "">Basic Details</button></a>
-                     <a href="payrule.html"><button type="button" class="btn btn-light deal-margin active">Pay Rule</button></a>
+                     <a href="payrule.html"><button type="button" class="btn btn-light deal-margin active">Pay Rule List</button></a>
                   </div>
                </div>
                     <div class="row">
                                 <div class="col-lg-2">
                                     <label for="usr" >Deal Name<span  class="red">*</span></label>
                                      <select class="form-control" id="sel1" >
-                                        <option>Deal Name 1</option>
-                                        <option>Deal Name 2</option>
-                                        <option>Deal Name 3</option>
-                                        <option>Deal Name 4</option>
+                                        <option>GSAMP Trust2006-HE4</option>
+                                        <option>GSAMP Trust2006-HE5</option>
+                                        <option>GSAMP Trust2006-HE6</option>
+                                        <option>GSAMP Trust2006-HE7</option>
                                      </select>
                                 </div>
                                 <div class="col-lg-2">
                                     <label for="usr" >Deal Scenario<span  class="red">*</span></label>
                                      <select class="form-control" id="sel1" >
-                                        <option>Deal Type 1</option>
-                                        <option>Deal Type 2</option>
-                                        <option>Deal Type 3</option>
-                                        <option>Deal Type 4</option>
+                                        <option>Stress</option>
+                                        <option>Base</option>
                                      </select>
                                 </div>
                                 <div class="col-lg-2">
                                     <label for="usr" >Status<span  class="red">*</span></label>
                                      <select class="form-control" id="sel1" >
-                                        <option>All</option>
-                                        <option>All</option>
-                                        <option>All</option>
-                                        <option>All</option>
+                                        <option>Active</option>
+                                        <option>InActive</option>
                                      </select>
                                 </div>
                                 <div class="col-lg-3 import">
                                 <a href="" class="btn btn-search p-6 "> <i class="ti-search "></i>Search </a>
                                 </div>
                                 <div class=" col-lg-3 import">
-                                   <a href="" class="btn btn-success-s btn-white right"> <i class="ion-grid"></i> Set Columns</a>
-                                   <a href="" class="btn btn-success-s btn-white right"><i class="ti-download"></i></a>
+
                                    <a href="addpayrule.html" class="btn btn-success-s btn-white right"><i class="ti-plus"></i>Pay Rule</a>
+                                   <a href="#" class="btn btn-success-s right edit"><i class="ion-trash-a"></i></a>
                                 </div>
                     </div><hr>
                 
@@ -234,13 +230,13 @@
                         </thead>
                         <tbody>
                            <tr><td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE4Stress</td>
-                              <td >GSAMP Trust2006-HE4Stress</td>
-                              <td >Actual</td>
+                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE4</td>
+                              <td >GSAMP Trust2006-HE2</td>
+                              <td >Stress</td>
                               <td >Lorem ipsum dolor sit amet</td>
-                              <td >Mm/DD/YYYY</td>
+                              <td >01/01/2017</td>
                               <td >Utkarsh Patnaik</td>
-                              <td >MM/DD/YYYY</td>  
+                              <td >01/01/2017</td>  
                               <td>Executed</td>
                               <td class="text-left">
                               <a href="" class="btn btn-success-s btn-white "> <i class="mdi mdi-settings"></i>Re-Execute</a>
@@ -248,28 +244,28 @@
                               </td>
                            </tr>
                            <tr>
-                              <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                             &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE4Stress</td>
-                              <td >GSAMP Trust2006-HE4Stress</td>
-                              <td >Actual</td>
+                              <td class="text-left "> <input type="checkbox" id="3" class="regular-checkbox"/><label for="3"></label>
+                             &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE5</td>
+                              <td >GSAMP Trust2006-HE3</td>
+                              <td >Stress</td>
                               <td >Lorem ipsum dolor sit amet</td>
-                              <td >Mm/DD/YYYY</td>
+                              <td >02/02/2017</td>
                               <td >Utkarsh Patnaik</td>
-                              <td >MM/DD/YYYY</td>  
+                              <td >02/02/2017</td>  
                               <td>Not Executed</td>
                               <td class="text-left">
                               <a href="" class="btn btn-success-s btn-white "> <i class="mdi mdi-settings"></i>Execute</a>
                               </td>
                            </tr>
                            <tr>
-                           <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE4Stress</td>
-                              <td >GSAMP Trust2006-HE4Stress</td>
-                              <td >Actual</td>
+                           <td class="text-left "> <input type="checkbox" id="4" class="regular-checkbox"/><label for="4"></label>
+                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE6</td>
+                              <td >GSAMP Trust2006-HE4</td>
+                              <td >Base</td>
                               <td >Lorem ipsum dolor sit amet</td>
-                              <td >Mm/DD/YYYY</td>
+                              <td >03/03/2017</td>
                               <td >Utkarsh Patnaik</td>
-                              <td >MM/DD/YYYY</td>  
+                              <td >03/03/2017</td>  
                               <td>Executed</td>
                                <td class="text-left">
                               <a href="" class="btn btn-success-s btn-white "> <i class="mdi mdi-settings"></i>Re-Execute</a>
@@ -277,28 +273,28 @@
                               </td>
                            </tr>
                            <tr>
-                           <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE4Stress</td>
-                              <td >GSAMP Trust2006-HE4Stress</td>
-                              <td >Actual</td>
+                           <td class="text-left "> <input type="checkbox" id="5" class="regular-checkbox"/><label for="5"></label>
+                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE7</td>
+                              <td >GSAMP Trust2006-HE5</td>
+                              <td >Base</td>
                               <td >Lorem ipsum dolor sit amet</td>
-                              <td >Mm/DD/YYYY</td>
+                              <td >04/04/2017</td>
                               <td >Utkarsh Patnaik</td>
-                              <td >MM/DD/YYYY</td>  
+                              <td >04/04/2017</td>  
                               <td>Not Executed</td>
                               <td class="text-left">
                               <a href="" class="btn btn-success-s btn-white "> <i class="mdi mdi-settings"></i>Execute</a>
                               </td>
                            </tr>
                            <tr>
-                           <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE4Stress</td>
-                              <td >GSAMP Trust2006-HE4Stress</td>
-                              <td >Actual</td>
+                           <td class="text-left "> <input type="checkbox" id="6" class="regular-checkbox"/><label for="6"></label>
+                            &nbsp;&nbsp;&nbsp;GSAMP Trust2006-HE8</td>
+                              <td >GSAMP Trust2006-HE6</td>
+                              <td >Base</td>
                               <td >Lorem ipsum dolor sit amet</td>
-                              <td >Mm/DD/YYYY</td>
+                              <td >05/05/2017</td>
                               <td >Utkarsh Patnaik</td>
-                              <td >MM/DD/YYYY</td>  
+                              <td >05/05/2017</td>  
                               <td>Executed</td>
                                <td class="text-left">
                               <a href="" class="btn btn-success-s btn-white "> <i class="mdi mdi-settings"></i>Re-Execute</a>

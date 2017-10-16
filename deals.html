@@ -32,7 +32,7 @@
 
                     <!-- Logo container-->
                     <div class="logo">
-                        <a href="index.html" class="logo">
+                        <a href="dashboard.html" class="logo">
                            <img src="assets/images/logo.png">
                         </a>
                        
@@ -58,8 +58,8 @@
                             </li>
 
 
-                            <li class="list-inline-item active"><a href="index.html">Dashboard</a></li>
-                            <li class="list-inline-item"><a href="admin-deals.html" class="active">Deals</a></li>
+                            <li class="list-inline-item"><a href="dashboard.html">Dashboard</a></li>
+                            <li class="list-inline-item active"><a href="admin-deals.html" >Deals</a></li>
                             <li class="list-inline-item"><a href="payrule.html">Pay Rules</a></li>
                             <li class="list-inline-item"><a href="payrulereport.html">Reports</a></li>
                             <li class="list-inline-item"><a href="#">Help</a></li>
@@ -136,7 +136,7 @@
 
                                     
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <a href="login.html" class="dropdown-item notify-item">
                                         <i class="ion-log-in"></i> <span>Logout</span>
                                     </a>
                                 </div>
@@ -162,23 +162,51 @@
              <div class="row">
                             <div class="col-lg-6"><h5>Add Deal</h5></div>
                             <div class="col-lg-6">
-                                 <a href="assumption.html"><button type="button" class="btn btn-light deal-margin">Assumption</button></a>
+                               <!--   <a href="assumption.html"><button type="button" class="btn btn-light deal-margin">Assumption</button></a> -->
                                 <a href="bonds.html"><button type="button" class="btn btn-light deal-margin ">Bonds</button></a>
                                 <a href="collaterals.html"><button type="button" class="btn btn-light deal-margin">Collaterals</button></a>
-                                <a href="dealdetails.html"><button type="button" class="btn btn-light deal-margin Deals active">Basic Details</button></a>
+                                <a href="deals.html"><button type="button" class="btn btn-light deal-margin Deals active">Basic Details</button></a>
+                                 <a href="admin-deals.html"><button type="button" class="btn btn-light deal-margin Deals">Deal List</button></a>
                             </div>
                     </div>
                     <br>
+
+                    <div class="row">
+                  <div class="col-lg-3 dropdown-form-20">
+                                <label>Import Deal Inputs<span class="red">*</span></label>
+                               <!-- image-preview-filename input [CUT FROM HERE]-->
+            <div class="input-group image-preview">
+                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
+                <span class="input-group-btn">
+                    <!-- image-preview-clear button -->
+                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                        <span class="glyphicon glyphicon-remove"></span> Clear
+                    </button>
+                    <!-- image-preview-input -->
+                    <div class="btn btn-default image-preview-input">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                        <span class="image-preview-input-title">Browse</span>
+                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"> <!-- rename it -->
+                    </div>
+                </span>
+            </div>
+
+                        </div><div class="col-lg-3 dropdown-form-20 import">
+                            <a href="" class="btn btn-search  "> Import </a>
+                        </div>
+                </div>
+                <hr>
                <div class="row div-align-cen">
                <h6 font-weight-600>Basic Details</h6>
              <span class="line"></span>
                   <div class="col-lg-3">
                      <label for="usr">Deal Name<span class="red">*</span></label>
                      <select class="form-control" id="sel1" >
-                        <option>GSAMP Trust 2006 HE-5</option>
-                        <option>GSAMP Trust 2006 HE-46</option>
-                        <option>GSAMP Trust 2006 HE-47</option>
-                        <option>GSAMP Trust 2006 HE-48</option>
+                        <option>GSAMP_2006HE4</option>
+                      <option>GSAMP_2006HE5</option>
+                      <option>GSAMP_2006HE6</option>
+                      <option>GSAMP_2006HE7</option>
+                      <option>GSAMP_2006HE8</option>
                      </select>
                     
                   </div>
@@ -186,10 +214,11 @@
                      
                      <label for="usr" >Deal Type<span  class="red">*</span></label>
                      <select class="form-control" id="sel1" >
-                        <option>Deal Type 1</option>
-                        <option>Deal Type 2</option>
-                        <option>Deal Type 3</option>
-                        <option>Deal Type 4</option>
+                        <option>Deal Type</option>
+                      <option>RMBS</option>
+                      <option>CMBS</option>
+                      <option>CLO</option>
+                      <option>CDO</option>
                      </select>
                      
                   </div>
@@ -220,32 +249,31 @@
                     <div class="col-lg-3">
                       <label for="password">Country<span  class="red">*</span></label>
                      <select class="form-control" id="sel1">
-                        <option>Country 1</option>
-                        <option>Country 2</option>
-                        <option>Country 3</option>
-                        <option>Country 4</option>
+                        <option>US</option>
+                        <option>EU</option>
                      </select>
                   </div>
                     <div class="col-lg-3">
                        <label for="password">Currency<span  class="red"">*</span></label>
                      <select class="form-control" id="sel1">
-                        <option>Currency 1</option>
-                        <option>Currency 2</option>
-                        <option>Currency 3</option>
-                        <option>Currency 4</option>
+                        
+                        <option>USD</option>
+                        <option>YURO</option>
+                        
                      </select>
                   </div>
                  </br><br/><br/>
                   <h6 class="h6-deal">Third Parties Details</h6>
 
                 <span class="line "></span>
-
-                  <table class="table table-auto-res mb-0 table-no-border" >
+                  <div class="row width-100">
+                    <div class="col-lg-7">
+                      <table class="table table-auto-res mb-0 table-no-border" >
                      <thead>
                         <tr>
-                           <th width="200px">Party Type</th>
-                           <th width="74%">Description</th>
-                           <th></th>
+                           <th>Party Type</th>
+                           <th>Description</th>
+                           <th>&nbsp;</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -254,8 +282,8 @@
                               <select class="form-control" id="sel1">
                                  <option>Issuing Entity</option>
                                  <option>Depositor</option>
-                                 <option>Originator</option>
-                                 <option>Originator</option>
+                                 <option>Sponsor</option>
+                                <option>Servicer</option>
                               </select>
                            </td>
                            <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
@@ -264,10 +292,10 @@
                         <tr>
                            <td>
                               <select class="form-control" id="sel1">
+                                  <option>Issuing Entity</option>
                                  <option>Depositor</option>
-                                 <option>Issuing Entity</option>
-                                 <option>Originator</option>
-                                 <option>Originator</option>
+                                 <option>Sponsor</option>
+                                 <option>Servicer</option>
                               </select>
                            </td>
                            <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
@@ -276,10 +304,10 @@
                         <tr>
                            <td>
                               <select class="form-control" id="sel1">
-                                 <option>Originator</option>
+                                  <option>Issuing Entity</option>
                                  <option>Depositor</option>
-                                 <option>Issuing Entity</option>
-                                 <option>Originator</option>
+                                 <option>Sponsor</option>
+                                 <option>Servicer</option>
                               </select>
                            </td>
                            <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
@@ -288,10 +316,10 @@
                         <tr>
                            <td>
                               <select class="form-control" id="sel1">
-                                 <option>Originator</option>
-                                 <option>Originator</option>
-                                 <option>Depositor>/option>
                                  <option>Issuing Entity</option>
+                                 <option>Depositor</option>
+                                 <option>Sponsor</option>
+                                <option>Servicer</option>
                               </select>
                            </td>
                            <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
@@ -300,10 +328,10 @@
                         <tr>
                            <td>
                               <select class="form-control" id="sel1">
-                                 <option>Originator</option>
-                                 <option>Currency 2</option>
-                                 <option>Depositor</option>
                                  <option>Issuing Entity</option>
+                                 <option>Depositor</option>
+                                 <option>Sponsor</option>
+                                 <option>Servicer</option>
                               </select>
                            </td>
                            <td> <input type="text" class="form-control " placeholder="GSAMP TRUST 2006-HE4"></td>
@@ -311,13 +339,115 @@
                         </tr>
                      </tbody>
                   </table>
+                    </div>
+                    <div class="col-lg-5">
+                       <table class="table table-auto-res mb-0 table-striped">
+                        <thead>
+                           <tr>
+                              <th>Assumption/Periodic </th>
+                              <th  class="b-r-n">Value</th> 
+                              <th  class="b-l-n">&nbsp;</th>     
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td> MAximum Loss Percentage
+</td>
+                              <td class="b-r-n">100%
+</td>
+                              <td class="b-l-n">&nbsp;</td>
+                           </tr>
+                            <tr>
+                              <td> Step-Down-Multiplier
+</td>
+                             <td class="b-r-n">1
+</td>
+                              <td class="b-l-n">&nbsp;</td>
+                           </tr>
+                            <tr>
+                              <td> OC Floor Percentage
+</td>
+                             <td class="b-r-n">0.50%
+</td>
+                              <td class="b-l-n">&nbsp;</td>
+                           </tr>
+                            <tr>
+                               <td> Delinquency Trigger Percentage
+</td>
+                             <td class="b-r-n">12.34%
+</td>
+                              <td class="b-l-n">&nbsp;</td>
+                           </tr>
+                            <tr>
+                             <td>Fixed SWAP Rate
+</td>
+                              <td class="b-r-n">5.44%
+</td>
+                              <td class="b-l-n">
+                                
+    
+
+  </td>
+                              
+                              
+                           </tr>
+                        </tbody>
+
+                     </table>
+                     <br>
+                     <div class="col-lg-12  text-right">
+                        <a href="#" class="btn btn-success-s btn-white pop" data-toggle="popover" data-trigger="click" data-original-title="<a id='assum'  onclick='hidea()'>Assumption</a>" data-html="true" data-content="<a  onclick='hidep()'>Periodic</a>">
+    <i class="ti-plus"></i></a>
+                     </div>
+                     
+
+                     <div class="row " id="Periodic" style="display:none;"> 
+                     <div class="col-lg-6 ">
+                       <label for="usr">Assumption Name<span class="red">*</span></label>
+                           <input type="text" class="form-control" placeholder="Assumption Name">
+                     </div>
+                      <div class="col-lg-6  ">
+                       <p class="m-b-5">Import Assumption File<span class="red">*</span></p>
+                     <div class="input-group image-preview">
+
+                <input type="text" class="form-control image-preview-filename" disabled="disabled"> 
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                        <span class="glyphicon glyphicon-remove"></span> Clear
+                    </button>
+                    <!-- image-preview-input -->
+                    <div class="btn btn-default image-preview-input">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                        <span class="image-preview-input-title">Browse</span>
+                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"> <!-- rename it -->
+                    </div>
+                </span>
+            </div>
+
+</div>
+
+</div>
+
+<div class="row " id="Assumption" style="display: none;">
+            <div class="col-lg-6 ">
+                           <label for="usr">Assumption Name<span class="red">*</span></label>
+                           <input type="text" class="form-control " placeholder="Assumption Name">
+                        </div>
+                         <div class="col-lg-6">
+                           <label for="usr">Assumption Value<span class="red">*</span></label>
+                           <input type="text" class="form-control " placeholder="Assumption Value">
+                        </div>
+</div>
+                    </div>
+                  </div>
+                  
       
                   
                  
                </div>
                            <div class="col-lg-12 text-center m-t-10">
-                             <a href="dealdetails.html" class="btn btn-save  btn-save-h ">Save </a>
-                             <a href="deals.html" class="btn btn-save btn-save-h text-center">Cancel</a>
+                             <a href="deals.html" class="btn btn-save  btn-save-h ">Save </a>
+                             <a href="#" class="btn btn-save btn-save-h text-center">Cancel</a>
                           
 
                          
@@ -377,6 +507,44 @@
     autoclose: true,
     todayHighlight: true
 });
+
+              $(".knob").knob();
+                $('.circliful-chart').circliful();
+
+                $(".pop").popover({ trigger: "manual" , html: true, animation:false})
+    .on("mouseenter", function () {
+        var _this = this;
+        $(this).popover("show");
+        $(".popover").on("mouseleave", function () {
+            $(_this).popover('hide');
+        });
+    }).on("mouseleave", function () {
+        var _this = this;
+        setTimeout(function () {
+            if (!$(".popover:hover").length) {
+                $(_this).popover("hide");
+            }
+        }, 300);
+});
+
+$( "#assum" ).click(function() {
+  alert("ddd");
+  //$( "#Assumption" ).toggle();
+});
+
+
+     
+
+function hidea() {
+   document.getElementById('Assumption').style.display = "flex";
+    document.getElementById('Periodic').style.display = "none";
+}
+function hidep() {
+   document.getElementById('Periodic').style.display = "flex";
+    document.getElementById('Assumption').style.display = "none";
+
+}
+
       </script>
    </body>
 </html>
