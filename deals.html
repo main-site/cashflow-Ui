@@ -170,10 +170,13 @@
                             </div>
                     </div>
                     <br>
-
-                    <div class="row">
+                      <div class="row div-align-cen">
+                         <h6>Import Deal Inputs<span class="red">*</span></h6>
+                      </div>
+                        <hr>
+                    <div class="row div-align-cen">
                   <div class="col-lg-3 dropdown-form-20">
-                                <label>Import Deal Inputs<span class="red">*</span></label>
+                               
                                <!-- image-preview-filename input [CUT FROM HERE]-->
             <div class="input-group image-preview">
                 <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
@@ -191,15 +194,18 @@
                 </span>
             </div>
 
-                        </div><div class="col-lg-3 dropdown-form-20 import">
+                        </div><div class="col-lg-3 dropdown-form-20">
                             <a href="" class="btn btn-search  "> Import </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="" class="btn btn-success-s btn-white right"><i class="ti-download"></i></a>
                         </div>
                 </div>
                 <hr>
                <div class="row div-align-cen">
                <h6 font-weight-600>Basic Details</h6>
              <span class="line"></span>
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
                      <label for="usr">Deal Name<span class="red">*</span></label>
                      <select class="form-control" id="sel1" >
                         <option>GSAMP_2006HE4</option>
@@ -210,7 +216,7 @@
                      </select>
                     
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
                      
                      <label for="usr" >Deal Type<span  class="red">*</span></label>
                      <select class="form-control" id="sel1" >
@@ -222,43 +228,53 @@
                      </select>
                      
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
                  
                      <label for="usr" >Closing Date<span  class="red">*</span></label>
                       <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                     <input type="text" class="form-control datepicker-autoclose" placeholder="DD/MM/YYYY" >
+                     <input type="text" class="form-control datepicker-autoclose" placeholder="MM/DD/YYYY" >
                     
                      
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
                     
                      <label for="usr" >Cut Off Date<span  class="red";>*</span></label>
-                     <input type="text" class="form-control datepicker-autoclose" placeholder="DD/MM/YYYY" >
+                     <input type="text" class="form-control datepicker-autoclose" placeholder="MM/DD/YYYY" >
                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
                     
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
                       <label for="password">First Distribution Date<span  class="red">*</span></label>
-                    <input type="text" class="form-control datepicker-autoclose" placeholder="DD/MM/YYYY" >
+                    <input type="text" class="form-control datepicker-autoclose" placeholder="MM/DD/YYYY" >
                     <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
                   </div>
-                   <div class="col-lg-3">
+                   <div class="col-lg-4">
                       <label for="password">Original Balance<span  class="red">*</span></label>
                      <input type="text" class="form-control" placeholder="Original Balance">
                   </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                       <label for="password">Country<span  class="red">*</span></label>
                      <select class="form-control" id="sel1">
                         <option>US</option>
                         <option>EU</option>
                      </select>
                   </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                        <label for="password">Currency<span  class="red"">*</span></label>
                      <select class="form-control" id="sel1">
                         
                         <option>USD</option>
-                        <option>YURO</option>
+                        <option>EUR</option>
+                        
+                     </select>
+                  </div>
+				  <div class="col-lg-4">
+                       <label for="password">Status<span  class="red"">*</span></label>
+                     <select class="form-control" id="sel1">
+                        
+                        <option>Active</option>
+                        <option>InActive</option>
+						<option>Complete</option>
                         
                      </select>
                   </div>
@@ -286,7 +302,7 @@
                                 <option>Servicer</option>
                               </select>
                            </td>
-                           <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
+                           <td> <input type="text" class="form-control" placeholder="GSAMP Trust 2006-HE4"></td>
                            <td><a href="" class="btn btn-success-s  edit"><i class="ion-trash-a"></i></a></td>
                         </tr>
                         <tr>
@@ -298,7 +314,7 @@
                                  <option>Servicer</option>
                               </select>
                            </td>
-                           <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
+                           <td> <input type="text" class="form-control" placeholder="GS Mortgage Securities Corp"></td>
                           <td><a href="" class="btn btn-success-s edit"><i class="ion-trash-a"></i></a></td>
                         </tr>
                         <tr>
@@ -310,7 +326,7 @@
                                  <option>Servicer</option>
                               </select>
                            </td>
-                           <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
+                           <td> <input type="text" class="form-control" placeholder="Goldman Sachs Mortgage Company"></td>
                           <td><a href="" class="btn btn-success-s  edit"><i class="ion-trash-a"></i></a></td>
                         </tr>
                         <tr>
@@ -322,7 +338,7 @@
                                 <option>Servicer</option>
                               </select>
                            </td>
-                           <td> <input type="text" class="form-control" placeholder="GSAMP TRUST 2006-HE4"></td>
+                           <td> <input type="text" class="form-control" placeholder="Wells Fargo Bank, N.A"></td>
                            <td><a href="" class="btn btn-success-s  edit"><i class="ion-trash-a"></i></a></td>
                         </tr>
                         <tr>
@@ -334,7 +350,7 @@
                                  <option>Servicer</option>
                               </select>
                            </td>
-                           <td> <input type="text" class="form-control " placeholder="GSAMP TRUST 2006-HE4"></td>
+                           <td> <input type="text" class="form-control " placeholder="Litton Loan Servicing LP"></td>
                            <td><a href="" class="btn btn-success-s  edit"><i class="ion-trash-a"></i></a> <a href="" class="btn btn-success-s  edit"><i class="ion-plus-round"></i></a></td>
                         </tr>
                      </tbody>
@@ -344,42 +360,42 @@
                        <table class="table table-auto-res mb-0 table-striped">
                         <thead>
                            <tr>
-                              <th>Assumption/Periodic </th>
+                              <th class="text-left">Assumption/Periodic </th>
                               <th  class="b-r-n">Value</th> 
                               <th  class="b-l-n">&nbsp;</th>     
                            </tr>
                         </thead>
                         <tbody>
                            <tr>
-                              <td> MAximum Loss Percentage
+                              <td class="text-left"> Maximum Loss Percentage
 </td>
                               <td class="b-r-n">100%
 </td>
                               <td class="b-l-n">&nbsp;</td>
                            </tr>
                             <tr>
-                              <td> Step-Down-Multiplier
+                              <td class="text-left"> Step-Down-Multiplier
 </td>
                              <td class="b-r-n">1
 </td>
                               <td class="b-l-n">&nbsp;</td>
                            </tr>
                             <tr>
-                              <td> OC Floor Percentage
+                              <td class="text-left"> OC Floor Percentage
 </td>
                              <td class="b-r-n">0.50%
 </td>
                               <td class="b-l-n">&nbsp;</td>
                            </tr>
                             <tr>
-                               <td> Delinquency Trigger Percentage
+                               <td class="text-left"> Delinquency Trigger Percentage
 </td>
                              <td class="b-r-n">12.34%
 </td>
                               <td class="b-l-n">&nbsp;</td>
                            </tr>
                             <tr>
-                             <td>Fixed SWAP Rate
+                             <td class="text-left">Fixed SWAP Rate
 </td>
                               <td class="b-r-n">5.44%
 </td>

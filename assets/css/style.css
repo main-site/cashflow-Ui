@@ -3033,15 +3033,19 @@ Modal
 .table {
   margin-bottom: 10px; }
 
-.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+/*.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
   border-top: 1px solid #f3f3f3; 
-font-size: 12px;}
+font-size: 11px;}*/
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border: none;
+    font-size: 11px;
+}
 
 .table > thead > tr > td.middle-align, .table > tbody > tr > td.middle-align {
   vertical-align: middle; }
 
 .table > thead > tr > th {
-    border-bottom: 2px solid #f3f3f3;
+    border: none;
     font-size: 13px;
     font-weight: 500;
 }
@@ -4459,12 +4463,20 @@ top: 15px;
     background-color: #E5F4ED;
 }
 
-.table td, .table th {
-   padding: 0.5rem;
+/*.table td, .table th {
+  padding: 0.3rem;
     vertical-align: top;
     border-top: 1px solid #e9ecef;
     border-left: 1px solid #BCBBC0;
     border-right: 1px solid #BCBBC0;
+    text-align: center;
+}*/
+.table td, .table th {
+    padding: 0.3rem;
+    vertical-align: top;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     text-align: center;
 }
 
@@ -4901,7 +4913,7 @@ hr {
 background-image: url(../images/login.png);
     background-size: cover;
     width: 100%;
-    height: auto;
+       height: 100%;
     background-position: center center;
     position: absolute;
 }
@@ -5375,4 +5387,10 @@ textarea::-webkit-scrollbar-thumb
 .interest-top{
       margin-top: -38px;
     margin-bottom: 22px;
+}
+.height-31{
+  height: 31px;
+}
+.margin-tp-30{
+    margin-top: 30px;
 }

@@ -133,15 +133,15 @@
         <div class="container-fluid">
           <div class="card-box">
             <div class="row">
-              <div class="col-lg-4"><h5>GSAMP Trust 2006 HE-4</h5></br></div>
-              <div class="col-lg-8">
+         
+              <div class="col-lg-12">
                 
                 <a href="bonds.html"><button type="button" class="btn btn-light deal-margin ">Bonds</button></a>
                 <a href="collaterals.html"><button type="button" class="btn btn-light deal-margin active">Collaterals</button></a>
                 <a href="deals.html"><button type="button" class="btn btn-light deal-margin Deals">Basic Details</button></a>
                 <a href="admin-deals.html"><button type="button" class="btn btn-light deal-margin Deals  ">Deal List</button></a>
               </div>
-            </div>
+            </div><br>
             <div class="row div-align-cen">
               <div class="col-lg-12">
                 <h6>Upload Collateral File</h6>
@@ -149,14 +149,21 @@
               <span class="line line-padding"></span>
             </div>
             <div class="row div-align-cen">
-              <div class="col-lg-3 dropdown-form">
-                <label for="usr">Scenario Name<span class="red">*</span></label>
+              <div class="col-lg-2">
+                <label for="usr">Deal Name<span class="red">*</span></label>
                 <select class="form-control" id="sel1">
-                  <option>Stress</option>
-                  <option>Base</option>
+                  <option> GSAMP Trust 2006-HE 4</option>
+                  <option> GSAMP Trust 2006-HE 5</option>
+                  <option> GSAMP Trust 2006-HE 6</option>
+                  <option> GSAMP Trust 2006-HE 7</option>
+                  <option> GSAMP Trust 2006-HE 8</option>
                 </select>
               </div>
-              <div class="col-lg-3 dropdown-form">
+			  <div class="col-lg-3">
+                <label for="usr">Scenario Name<span class="red">*</span></label>
+                <input type="text" class="form-control height-31" name="Scenario">
+              </div>
+              <div class="col-lg-3">
                 <label >Import Collateral File<span class="red">*</span></label>
                 <!-- image-preview-filename input [CUT FROM HERE]-->
                 <div class="input-group image-preview">
@@ -175,10 +182,10 @@
                   </span>
                 </div>
               </div>
-              <div class="col-lg-3 dropdown-form import">
+              <div class="col-lg-3 import">
                 <a href="" class="btn btn-search  "> </i>Import </a>
               </div>
-              <div class="col-lg-3 import">
+              <div class="col-lg-1 import">
                 <a href="" class="btn btn-success-s btn-white right"><i class="ti-download"></i></a>
               </div>
             </div>
@@ -199,7 +206,6 @@
               </div>
               <div class="col-lg-5">
                 <a href="" class="btn btn-success-s right edit"><i class="ion-trash-a"></i></a>
-                <a href="collateraldetails.html" class="btn btn-success-s right edit"><i class="ion-edit"></i></a>
               </div>
             </div></br>
             <div class="row div-align-cen">
@@ -210,46 +216,52 @@
                       <tr>
                         <th class="text-left">
                           <input type="checkbox" id="1" class="regular-checkbox"/><label for="1"></label>
-                        &nbsp;&nbsp;&nbsp;Collateral File</th>
+                        &nbsp;&nbsp;&nbsp;Deal File</th>
                         <th>Scenario Name</th>
                         <th>Uploaded Date</th>
                         <th>Uploaded By</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr><td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                    &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  4.xls</td>
+                    &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  4</td>
                     <td >Stress</td>
                     <td >04/04/2017</td>
                     <td >John Daniel</td>
+                    <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
                   </tr>
                   <tr>
                     <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                  &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  5.xls</td>
+                  &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  5</td>
                   <td >Stress</td>
                   <td >05/09/2017</td>
                   <td >John Daniel</td>
+                  <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
                 </tr>
                 <tr>
                   <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  6.xls</td>
+                &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  6</td>
                 <td >Base</td>
                 <td >05/07/2017</td>
                 <td >John Daniel</td>
+                <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
               </tr>
               <tr>
                 <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-              &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  7.xls</td>
+              &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  7</td>
               <td >Base</td>
               <td >08/08/2017</td>
               <td >John Daniel</td>
+              <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
             </tr>
             <tr>
               <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-            &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  8.xls</td>
+            &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  8</td>
             <td >Base</td>
             <td >08/12/2017</td>
             <td >John Daniel</td>
+            <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
           </tr>
         </tbody>
       </table></br>

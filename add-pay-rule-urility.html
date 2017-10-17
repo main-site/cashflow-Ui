@@ -180,7 +180,7 @@
               </div>
               <div class="col-lg-3 m-b-10">
                 <label for="usr">Utility Name <span class="red">*</span></label>
-                <input type="text" class="form-control " placeholder="Utility Name">
+                <input type="text" class="form-control " placeholder="PrincipalRemittanceAmount_Grp1">
               </div>
               <div class="col-lg-6 m-b-10 p-r-20">
                 <label for="usr">Description<span class="red">*</span></label>
@@ -295,7 +295,7 @@
                       </div>
                       <div id="collapse3" class="panel-collapse collapse">
                         <div class="panel-body panel-height">
-                          <li>MAximum Loss Percentage</li>
+                          <li>Maximum Loss Percentage</li>
                           <li>Step-Down-Multiplier</li>
                           <li>OC Floor Percentage</li>
                           <li>Delinquency Trigger Percentage</li>
@@ -346,59 +346,7 @@
                       </div>
                     </div>
                   </div>
-                   <textarea id ="editor" rows="18" cols="77">
-                    
-                    Pay  From   U_A1_CPN    To Bond.A1.Coupon   
-Pay  From    U_A2A_CPN  To Bond.A2A.Coupon  
-Pay  From    U_A2B_CPN  To Bond.A2B.Coupon  
-Pay  From    U_A2C_CPN  To Bond.A2C.Coupon  
-Pay  From    U_A2D_CPN  To Bond.A2D.Coupon  
-Pay  From   U_M1_CPN    To Bond.M1.Coupon   
-Pay  From   U_M2_CPN    To Bond.M2.Coupon   
-Pay  From   U_M3_CPN    To Bond.M3.Coupon   
-Pay  From   U_M4_CPN    To Bond.M4.Coupon   
-Pay  From   U_M5_CPN    To Bond.M5.Coupon   
-Pay  From   U_M6_CPN    To Bond.M6.Coupon   
-Pay  From   U_M7_CPN    To Bond.M7.Coupon   
-Pay  From   U_M8_CPN    To Bond.M8.Coupon   
-Pay  From   U_M9_CPN    To Bond.M9.Coupon   
-Pay  From   U_B1_CPN    To Bond.B1.Coupon   
-Pay  From   U_B2_CPN    To Bond.B2.Coupon  
-
-Pay  From   U_LOAN1_CAP To Bond.A1.CappedCoupon    
-Pay  From   U_LOAN2_CAP To Bond.A2A.CappedCoupon   
-Pay  From   U_LOAN2_CAP To Bond.A2B.CappedCoupon   
-Pay  From   U_LOAN2_CAP To Bond.A2C.CappedCoupon   
-Pay  From   U_LOAN2_CAP To Bond.A2D.CappedCoupon
-  
-Pay  From  U_WAC_CAP To Bond.M1.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M2.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M3.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M4.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M5.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M6.CappedCoupon    
-Pay  From U_WAC_CAP To Bond.M7.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M8.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.M9.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.B1.CappedCoupon    
-Pay  From  U_WAC_CAP To Bond.B2.CappedCoupon    
-
-
-
-PAY ARREARS FROM U_INT1 TO Bond.A1.InterestPayment
-PAY INTARREARS FROM U_INT1 TO Bond.A1.InterestPayment
-
-PAY DUEINT FROM U_INT2 TO ProRataPayment(Bond.InterestAccrued, Bond.A2A.InterestPayment, Bond.A2B.InterestPayment, Bond.A2C.InterestPayment, Bond.A2D.InterestPayment)
-PAY ARREARS FROM U_INT2 TO ProRataPayment(Bond.InterestAccrued, Bond.A2A.InterestPayment, Bond.A2A.InterestPayment, Bond.A2C.InterestPayment, Bond.A2D.InterestPayment);
-PAY INTARREARS FROM U_INT2 TO ProRataPayment(Bond.InterestAccrued, Bond.A2A.InterestPayment, Bond.A2A.InterestPayment, Bond.A2C.InterestPayment, Bond.A2D.InterestPayment);
-
-PAY DUEINT FROM U_INT2 TO Bond.A1.InterestPayment;
-PAY ARREARS FROM U_INT2 TO Bond.A1.InterestPayment;
-PAY INTARREARS FROM U_INT2 TO Bond.A1.InterestPayment;
-
-PAY DUEINT FROM U_INT1 TO ProRataPayment(Bond.InterestAccrued, Bond.A2A.InterestPayment, Bond.A2A.InterestPayment, Bond.A2C.InterestPayment, Bond.A2D.InterestPayment);
-PAY ARREARS FROM U_INT1 TO ProRataPayment(Bond.InterestAccrued, Bond.A2A.InterestPayment, Bond.A2A.InterestPayment, Bond.A2C.InterestPayment, Bond.A2D.InterestPayment);
-PAY INTARREARS FROM U_INT1 TO ProRataPayment(Bond.InterestAccrued, Bond.A2A.InterestPayment, Bond.A2A.InterestPayment, Bond.A2C.InterestPayment, Bond.A2D.InterestPayment); 
+                   <textarea id ="editor" rows="18" cols="77">Collateral.Group1.ScheduledPrincipal + Collateral.Group1.PrepaymentProceeds  + Collateral.Group1.LiquidationProceeds + Collateral.Group1.CondemnationProceeds
                   </textarea>
                   <div class="header-pay border-all">
                     <div class="row">

@@ -147,28 +147,39 @@
             <hr>
             <div class="row">
               <div class="col-lg-3">
-                <label >Rule Name<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="ALM6_1,B1RR">
-              </div>
+                <label for="usr">Deal Name<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>GSAMP Trust 2006 HE-5</option>
+                            <option>GSAMP Trust 2006 HE-46</option>
+                            <option>GSAMP Trust 2006 HE-47</option>
+                            <option>GSAMP Trust 2006 HE-48</option>
+                            </select>
+                            </div>
               <div class="col-lg-3">
-                <label >Scenario<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="CLO">
-              </div>
+               <label for="usr">Collateral Scenario<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>Stress</option>
+                            <option>Base</option>
+                            </select>
+                            </div>
               <div class="col-lg-3">
-                <label >Deal Name<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="ALM6_1,B1RR">
-              </div>
+                <label for="usr">Bond Scenario<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>Stress</option>
+                            <option>Base</option>
+                            </select>
+                            </div>
+              <div class="col-lg-3">
+                <label for="usr">Payrule<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>Payrule 1</option>
+                            <option>Payrule 2</option>
+                            <option>Payrule 3</option>
+                            <option>Payule 4</option>
+                            </select>
+                            </div>
             </div></br>
             <div class="row">
-              <div class="col-lg-3">
-                <label >Executed By<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="Utkarsh">
-              </div>
-              <div class="col-lg-3">
-                <label >Executed On<span class="red">*</span></label></br>
-                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy" >
-              </div>
               <div class="col-lg-6">
                 <label >Report Period<span class="red">*</span></label></br>
                 <div class="row">
@@ -188,7 +199,7 @@
                   </div>
                 </div>
               </div>
-            </div></br>
+            </div><br>
              <h6>Reports</h6>
             <div class="row">
               <div class="col-md-8">
@@ -247,7 +258,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#messages1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                      Tigger Reporting
+                                      Trigger Reporting
                                     </a>
                                 </li>
                             </ul>

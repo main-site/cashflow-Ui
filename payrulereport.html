@@ -147,28 +147,39 @@
             <hr>
             <div class="row">
               <div class="col-lg-3">
-                <label >Rule Name<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="ALM6_1,B1RR">
-              </div>
+                <label for="usr">Deal Name<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>GSAMP Trust 2006 HE-5</option>
+                            <option>GSAMP Trust 2006 HE-46</option>
+                            <option>GSAMP Trust 2006 HE-47</option>
+                            <option>GSAMP Trust 2006 HE-48</option>
+                            </select>
+                            </div>
               <div class="col-lg-3">
-                <label >Scenario<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="CLO">
-              </div>
+               <label for="usr">Collateral Scenario<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>Stress</option>
+                            <option>Base</option>
+                            </select>
+                            </div>
               <div class="col-lg-3">
-                <label >Deal Name<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="ALM6_1,B1RR">
-              </div>
+                <label for="usr">Bond Scenario<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>Stress</option>
+                            <option>Base</option>
+                            </select>
+                            </div>
+              <div class="col-lg-3">
+                <label for="usr">Payrule<span class="red">*</span></label>
+                            <select class="form-control" id="sel1" >
+                            <option>Payrule 1</option>
+                            <option>Payrule 2</option>
+                            <option>Payrule 3</option>
+                            <option>Payule 4</option>
+                            </select>
+                            </div>
             </div></br>
             <div class="row">
-              <div class="col-lg-3">
-                <label >Executed By<span class="red">*</span></label></br>
-                <input type="text" class="form-control" placeholder="Utkarsh">
-              </div>
-              <div class="col-lg-3">
-                <label >Executed On<span class="red">*</span></label></br>
-                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy" >
-              </div>
               <div class="col-lg-6">
                 <label >Report Period<span class="red">*</span></label></br>
                 <div class="row">
@@ -386,7 +397,7 @@
                         <td >$0.00</td>
                         <td >$6,883,472.70</td>
                         <td >$224,332,214.84</td>
-                        <td >$0.64</td>
+                        <td >0.64%</td>
                         <td >$6,883,472.70</td>
                       </tr>
                       <tr>
@@ -401,7 +412,7 @@
                         <td >$0.00</td>
                         <td >$8,053,762.10</td>
                         <td >$82,904,642.06</td>
-                        <td >$0.40</td>
+                        <td >0.40%</td>
                         <td >$8,053,762.10</td>
                       </tr>
                       <tr>
@@ -416,7 +427,7 @@
                         <td >$0.00</td>
                         <td >$0.00</td>
                         <td >$94,519,000.00</td>
-                        <td >$1.00</td>
+                        <td >1.00%</td>
                         <td >$0.00</td>
                       </tr>
                       <tr>
@@ -431,7 +442,7 @@
                         <td >$0.00</td>
                         <td >$0.00</td>
                         <td >$87,368,000.00</td>
-                        <td >$1.00</td>
+                        <td >1.00%</td>
                         <td >$0.00</td>
                       </tr>
                       <tr>
@@ -446,7 +457,7 @@
                         <td >$0.00</td>
                         <td >$0.00</td>
                         <td >$34,923,000.00</td>
-                        <td >$1.00</td>
+                        <td >1.00%</td>
                         <td >$0.00</td>
                       </tr>
                       <tr>
@@ -461,7 +472,7 @@
                         <td >$0.00</td>
                         <td >$0.00</td>
                         <td >$40,100,000.00</td>
-                        <td >$1.00</td>
+                        <td >1.00%</td>
                         <td >$0.00</td>
                       </tr>
                     </tbody>
@@ -491,7 +502,7 @@
                         <td >A-1</td>
                         <td >07/25/07-08/26/07</td>
                         <td >33</td>
-                        <td >$5.46</td>
+                        <td >5.46%</td>
                         <td >$231,215,687.54</td>
                         <td >$1,157,234.52</td>
                         <td >$0.00</td>
@@ -506,7 +517,7 @@
                         <td >A-2A</td>
                         <td >07/25/07-08/26/07</td>
                         <td >33</td>
-                        <td >$5.39</td>
+                        <td >5.39%</td>
                         <td >$90,958,404.16</td>
                         <td >$449,410.32</td>
                         <td >$0.00</td>
@@ -521,7 +532,7 @@
                         <td >A-2B</td>
                         <td >07/25/07-08/26/07</td>
                         <td >33</td>
-                        <td >$5.43</td>
+                        <td >5.43%</td>
                         <td >$94,519,000.00</td>
                         <td >$470,468.32</td>
                         <td >$0.00</td>
@@ -536,7 +547,7 @@
                         <td >A-2C</td>
                         <td >07/25/07-08/26/07</td>
                         <td >33</td>
-                        <td >$5.46</td>
+                        <td >5.46%</td>
                         <td >$87,368,000.00</td>
                         <td >$438,077.71</td>
                         <td >$0.00</td>
@@ -551,7 +562,7 @@
                         <td >A-2D</td>
                         <td >07/25/07-08/26/07</td>
                         <td >33</td>
-                        <td >$5.46</td>
+                        <td >5.46%</td>
                         <td >$34,923,000.00</td>
                         <td >$178,631.15</td>
                         <td >$0.00</td>
@@ -566,7 +577,7 @@
                         <td >M-1</td>
                         <td >07/25/07-08/26/07</td>
                         <td >33</td>
-                        <td >$5.67</td>
+                        <td >5.67%</td>
                         <td >$40,100,000.00</td>
                         <td >$206,581.83</td>
                         <td >$0.00</td>
