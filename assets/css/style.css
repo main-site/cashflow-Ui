@@ -5359,3 +5359,20 @@ textarea::-webkit-scrollbar-thumb
   height: 120px;
     overflow: auto;
 }
+
+.table-border > tbody > tr > td{
+     border: 1px solid #bcbbc0;
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    font-weight: 200;
+}
+.deal-margin-left {
+    margin-top: auto;
+    float: left;
+}
+.interest-top{
+      margin-top: -38px;
+    margin-bottom: 22px;
+}
