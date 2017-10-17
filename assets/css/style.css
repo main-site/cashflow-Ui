@@ -4898,8 +4898,12 @@ hr {
 }
 
 .login-background{
-background-image: url("../images/login.png");
-background-size: cover;
+background-image: url(../images/login.png);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    position: absolute;
 }
 .image-btm-logo{
   margin-top: 29px;
