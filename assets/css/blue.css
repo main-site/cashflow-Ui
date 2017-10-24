@@ -33,8 +33,8 @@
       color: #ffffff; }
   #topnav .has-submenu.active .submenu li.active > a {
     color: #039cfd; }
- #topnav .topbar-main {
-    background-color: #1d1d1d;
+#topnav .topbar-main {
+    background-color: #555555;
     border-bottom: 1px solid #eeeeee;
 }
     #topnav .topbar-main .logo {
@@ -603,10 +603,10 @@ a:focus {
   padding-right: 15px; }
 
 .footer {
- background-color: #1d1d1d;
+ background-color: #555555;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     bottom: 0;
-    color: #6B6C6D;
+    color: #c9c8ca;
     text-align: left !important;
     padding: 20px 30px;
     position: absolute;
@@ -1950,7 +1950,7 @@ code, pre {
   font-weight: 600; }
 
 .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
-  background-color: #26B893; }
+  background-color: #0173bc }
 
 /* Vertial tab */
 .tabs-vertical-env .tab-content {
@@ -2391,7 +2391,7 @@ Modal
 }
  .form-control:focus {
     background: #ffffff;
-    border-color: #26b893;
+    border-color: #0173bc;
     box-shadow: none;
 }
 
@@ -4408,7 +4408,7 @@ File: Responsive
 
 .notification-list>a>div{
   width: 24px;
-    background-color: #fe5d31;
+    background-color: #0173bc;
     color: #fff;
     text-align: center;
     font-size: 16px;
@@ -4460,7 +4460,7 @@ top: 15px;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #E5F4ED;
+    background-color: #e4f1f9;
 }
 
 /*.table td, .table th {
@@ -4507,7 +4507,7 @@ top: 15px;
       float: right;
     margin: -38px 10px 10px 0px;
     color: #fff;
-    background-color: #00B58A !important;
+    background-color: #0173bc !important;
     font-size: 12px;
     border: none;
 }
@@ -4526,7 +4526,7 @@ top: 15px;
 }
 
 .btn-success-s {
-        background-color: #26B893;
+        background-color: #0173bc;
     border: none;
     margin: 2px;
     font-size: 12px;
@@ -4595,13 +4595,13 @@ select.form-control:not([size]):not([multiple]) {
     position: absolute;
     top: 0px;
     left: 2px;
-    color: #26b893;                            
+    color: #0173bc;                            
 
 }
 
 .regular-checkbox:active + label:active {              
 
-    background-color: #62b362;             
+    background-color: #0173bc;             
 }
 hr {
     margin-top: 1rem;
@@ -4610,9 +4610,9 @@ hr {
     border-top: 1px solid #C6C7C9;
 }
 
-.table>tbody>tr>.active{
-  background-color: #26B893;
-  color: #fff;
+.table>tbody>tr>.active {
+    background-color: #0173bc;
+    color: #fff;
 }
 
 .right{
@@ -4657,8 +4657,8 @@ hr {
 }
 
 .btn-save{
-     background-color: #26B893;
-    border: 1px solid #26B893;
+     background-color: #0173bc;
+    border: 1px solid #0173bc;
     font-size: 12px;
     width: 7%;
     color: #fff;
@@ -4684,14 +4684,14 @@ hr {
     font-weight: 300;
 }
 .btn-light:hover{
-    background-color: #00B489;
-    border-color: #00B489;
+   background-color: #0173bc;
+    border-color: #0173bc;
     color: #fff;
     font-size: 12px;
 }
 .btn-light.active{
-    background-color: #00B489;
-    border-color: #00B489;
+   background-color: #0173bc;
+    border-color: #0173bc;
     color: #fff;
     font-size: 12px;
 }
@@ -4710,13 +4710,13 @@ hr {
     width: 35%;
     color: #343c49;
             }
-             .btn-search:hover{
-                border: 1px solid #26B893;
+             .btn-search:hover {
+    border: 1px solid #0173bc;
     font-size: 12px;
     width: 35%;
     color: #ffffff;
-    background-color: #26B893;
-            }
+    background-color: #0173bc;
+}
            .btn-search>.ti-search{
                   margin-left: -13px;
     margin-right: 10px;
@@ -4893,16 +4893,16 @@ hr {
     line-height: 1;
 }
 .btn-save-add{
-  background-color: #26B893;
-    border: 1px solid #26B893;
+ background-color: #0173bc;
+    border: 1px solid #0173bc;
     font-size: 12px;
     width: 7%;
     color: #fff;
         height: 30px;
 }
 .btn-save-add:hover, .btn-save-add:active{
-  background-color: #26B893;
-    border: 1px solid #26B893;
+  background-color: #0173bc;
+    border: 1px solid #0173bc;
     font-size: 12px;
     width: 7%;
     color: #fff;
@@ -5067,7 +5067,7 @@ background-image: url(../images/login.png);
       vertical-align: -webkit-baseline-middle;
 }
 .nav-user:hover{
- background: #292728;
+ background: #555555;
 }
 .nav-user:active{
  background: #292728;
@@ -5077,9 +5077,9 @@ background-image: url(../images/login.png);
     left: 8px !important;
     top: -2px !important;
     border-radius: 0px;
-    background-color: #292728;
-    color: #a2a1a6;
-        padding: 0px;
+    background-color: #555555;
+    color: #908f93;
+    padding: 0px;
         -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
     box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3)
 }
@@ -5268,7 +5268,7 @@ h5,h6{
        border-bottom: 2px solid #f3f3f3;
     font-size: 13px;
     font-weight: 500;
-    background-color: #00B58A;
+    background-color: #0072bb;
     color: #fff;
     border: none;
 }
@@ -5307,7 +5307,7 @@ p{
     margin-bottom: 0;
     font-size: 1rem;
     color: inherit;
-    background-color: #e5f4ed;
+    background-color: #e4f1f9;
     border-bottom: 1px solid #ebebeb;
     border-top-left-radius: calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px);
@@ -5401,7 +5401,7 @@ textarea::-webkit-scrollbar-thumb
     font-size: 12px;
     width: 35%;
     color: #ffffff !important;
-    background-color: #26B893 !important;
+    background-color: #0173bc !important;
     
     
 }
@@ -5412,7 +5412,28 @@ textarea::-webkit-scrollbar-thumb
     
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+    background-color: #0173bc;
+}
 
+
+/*select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+select option:hover {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+*/
 a:hover {
     color: #000;
     text-decoration: underline;
