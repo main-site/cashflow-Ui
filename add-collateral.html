@@ -144,14 +144,14 @@
             </div><br>
             <div class="row div-align-cen">
               <div class="col-lg-6">
-                <h6>Upload Collateral File</h6>
+                <h6>Collateral Modelling</h6>
               </div><div class="col-lg-6">
               
                 
                 <a href="asset-collateral.html"><button type="button" class="btn btn-light deal-margin ">Asset Forecast</button></a>
                 <a href="scenarios-collaterals.html"><button type="button" class="btn btn-light deal-margin ">Scenarios</button></a>
-                <a href="add-collateral.html"><button type="button" class="btn btn-light deal-margin Deals">Add Collateral</button></a>
-                <a href="collaterals.html"><button type="button" class="btn btn-light deal-margin Deals  active">Collateral List</button></a>
+                <a href="add-collateral.html"><button type="button" class="btn btn-light deal-margin Deals active">Add Collateral</button></a>
+                <a href="collaterals.html"><button type="button" class="btn btn-light deal-margin Deals  ">Collateral List</button></a>
               
               </div>
               <br>
@@ -169,48 +169,56 @@
                   <option> GSAMP Trust 2006-HE 8</option>
                 </select>
               </div>
-			  <div class="col-lg-2">
-                <label for="usr">Deal Type<span class="red">*</span></label>
-                <select class="form-control">
-                      <option>Select</option>
-                      <option>RMBS</option>
-                      <option>CMBS</option>
-                      <option>CLO</option>
-                      <option>CDO</option>
-                    </select>
+			  <div class="col-lg-3">
+                <label for="usr">Scenarios Name<span class="red">*</span></label>
+                <input type="text" class="form-control " value="">
               </div>
-               <div class="col-lg-2">
-                <label for="usr">Uploaded Date<span class="red">*</span></label>
-               <input type="text" class="form-control datepicker-autoclose" placeholder="MM/DD/YYYY">
-               <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-              </div>
-              <div class="col-lg-3 import">
-               <input type="text" class="form-control " value="">
-              </div>
-              <div class="col-lg-3 import">
                
-                <a href="#" class="btn btn-search p-1 "> <i class="ti-search "></i>Search </a>
-              </div>
+             
             </div>
             </br>
             <!-- end row -->
-           <!--  <div class="row div-align-cen">
+            <div class="row div-align-cen">
               <div class="col-lg-4">
-                <h6>Uploaded Collateral Files</h6>
+               <!--  <h6>Uploaded Collateral Files</h6> -->
               </div>
               <span class="line line-padding"></span>
-            </div> -->
-            <!-- <div class="row div-align-cen">
-              <div class="col-lg-4 div-padding-20">
+            </div> 
+             <div class="row div-align-cen">
+              <div class="col-lg-2">
+                <h6>Import Loan Data</h6>
+              </div>
+              <div class="col-lg-3 ">
                 <input type="text" class="form-control " value="">
               </div>
-              <div class="col-lg-3">
-                <a href="" class="btn btn-search  "> <i class="ti-search "></i>Search </a>
+              
+              <div class="col-lg-3 dropdown-form-20">
+                               
+                               <!-- image-preview-filename input [CUT FROM HERE]-->
+            <div class="input-group image-preview">
+                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
+                <span class="input-group-btn">
+                    <!-- image-preview-clear button -->
+                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                        <span class="glyphicon glyphicon-remove"></span> Clear
+                    </button>
+                    <!-- image-preview-input -->
+                    <div class="btn btn-default image-preview-input">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                        <span class="image-preview-input-title">Browse</span>
+                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"> <!-- rename it -->
+                    </div>
+                </span>
+            </div>
+
+                        </div>
+                        <div class="col-lg-3 dropdown-form-20">
+                            <a href="" class="btn btn-search  "> Import </a>
+                        </div>
+              <div class="col-lg-1">
+                <a href="" class="btn btn-success-s btn-white right"><i class="ti-download"></i></a>
               </div>
-              <div class="col-lg-5">
-                <a href="" class="btn btn-success-s right edit"><i class="ion-trash-a"></i></a>
-              </div>
-            </div></br> -->
+            </div></br> 
             <div class="row div-align-cen">
               <div class="col-lg-12">
                 <div class="card-box">
@@ -218,59 +226,110 @@
                     <thead>
                       <tr>
                         <th class="text-left">
-                          <input type="checkbox" id="1" class="regular-checkbox"/><label for="1"></label>
-                        &nbsp;&nbsp;&nbsp;Deal File</th>
-                        <th>Scenario Name</th>
-                        <th>Uploaded Date</th>
-                        <th>Uploaded By</th>
-                        <th>Action</th>
+                          Loan No.</th>
+                        <th>Product Type</th>
+                        <th>Orig Balance</th>
+                        <th>Current Balance</th>
+                        <th>Gross Coupon</th>
+                        <th>Servicing Rate</th>
+                        <th>Orig Amort term</th>
+                        <th>Rem Amort Term</th>
+                        <th>IsBallon</th>
+                        <th>Original Mature Term</th>
+                        <th>Rem Maturity Term </th>
+                        <th>Orig IO term </th>
+                        <th>Rem IO term </th>
+                        <th>CPR</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr><td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                    &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  4</td>
-                    <td >Stress</td>
-                    <td >04/04/2017</td>
-                    <td >John Daniel</td>
-                    <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
+                      <tr><td>1212</td>
+                        <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                    <td>text</td>
+                      <td>text</td>
+                        <td>text</td>
+                     <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                      <td>text</td>
+                    <td>text</td>
+                     <td>text</td>
                   </tr>
-                  <tr>
-                    <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                  &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  5</td>
-                  <td >Stress</td>
-                  <td >05/09/2017</td>
-                  <td >John Daniel</td>
-                  <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
-                </tr>
-                <tr>
-                  <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-                &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  6</td>
-                <td >Base</td>
-                <td >05/07/2017</td>
-                <td >John Daniel</td>
-                <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
-              </tr>
-              <tr>
-                <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-              &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  7</td>
-              <td >Base</td>
-              <td >08/08/2017</td>
-              <td >John Daniel</td>
-              <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
-            </tr>
-            <tr>
-              <td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
-            &nbsp;&nbsp;&nbsp;GSAMP Trust 2006-HE  8</td>
-            <td >Base</td>
-            <td >08/12/2017</td>
-            <td >John Daniel</td>
-            <td><a href="collateraldetails.html" class="btn btn-success-s  edit"><i class="ion-edit"></i></a></td>
-          </tr>
+                <tr><td>1212</td>
+                        <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                    <td>text</td>
+                      <td>text</td>
+                        <td>text</td>
+                     <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                      <td>text</td>
+                    <td>text</td>
+                     <td>text</td>
+                  </tr>
+                 <tr><td>1212</td>
+                        <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                    <td>text</td>
+                      <td>text</td>
+                        <td>text</td>
+                     <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                      <td>text</td>
+                    <td>text</td>
+                     <td>text</td>
+                  </tr>
+               <tr><td>1212</td>
+                        <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                    <td>text</td>
+                      <td>text</td>
+                        <td>text</td>
+                     <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                      <td>text</td>
+                    <td>text</td>
+                     <td>text</td>
+                  </tr>
+            <tr><td>1212</td>
+                        <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                    <td>text</td>
+                      <td>text</td>
+                        <td>text</td>
+                     <td>text</td>
+                       <td>text</td>
+                       <td>text</td>
+                      <td>text</td>
+                    <td>text</td>
+                     <td>text</td>
+                  </tr>
         </tbody>
-      </table></br>
+      </table><br>
     </div>
   </div>
+  <div class="col-lg-12 text-center m-t-10">
+                             <a href="deals.html" class="btn btn-save  btn-save-h ">Save </a>
+                             <a href="#" class="btn btn-save btn-save-h text-center">Cancel</a>
+                          
+
+                         
   
+                        </div>
 </div>
 </div>
 <!-- end row -->
