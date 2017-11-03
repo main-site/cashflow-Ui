@@ -1,455 +1,477 @@
-
 <!DOCTYPE html>
 <html>
-    
-<head>
-        <meta charset="utf-8" />
-        <title>Welcome To CashFlow</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-        <link rel="shortcut icon" href="assets/images/favicon.png">
-
-        <link rel="stylesheet" href="plugins/morris/morris.css">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome To CashFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="plugins/morris/morris.css">
     <link href="plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/font/flaticon.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-
-        <script src="assets/js/modernizr.min.js"></script>
-
-    </head>
-
-    <body>
-
-        <!-- Navigation Bar-->
-        <header id="topnav">
-            <div class="topbar-main">
-                <div class="container-fluid">
-
-                    <!-- Logo container-->
-                    <div class="logo">
-                        <a href="dashboard.html" class="logo">
-                           <img src="assets/images/logo.png">
-                        </a>
-                       
-
-                    </div>
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/font/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+      <div class="topbar-main">
+        <div class="container-fluid">
+          <!-- Logo container-->
+          <div class="logo">
+            <a href="dashboard.html" class="logo">
+              <img src="assets/images/logo.png">
+            </a>
+            
+          </div>
+          
+          <div class="menu-extras topbar-custom">
+            <ul class="list-inline float-right mb-0">
+              <li class="menu-item list-inline-item">
+                
+                <a class="navbar-toggle nav-link">
+                  <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <!-- End mobile menu toggle-->
+              </li>
+              <li class="list-inline-item"><a href="dashboard.html">Dashboard</a></li>
+              <li class="list-inline-item active"><a href="admin-deals.html" >Deals</a></li>
+              <li class="list-inline-item "><a href="payrule.html">Pay Rules</a></li>
+              <li class="list-inline-item"><a href="payrulereport.html">Reports</a></li>
+              <li class="list-inline-item"><a href="#">Help</a></li>
+              <li class="list-inline-item dropdown notification-list">
+                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="false" aria-expanded="false">
+                  <div>5</div>
                   
-
-
-                    <div class="menu-extras topbar-custom">
-
-                        <ul class="list-inline float-right mb-0">
-
-                            <li class="menu-item list-inline-item">
-                              
-                                <a class="navbar-toggle nav-link">
-                                    <div class="lines">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </a>
-                                <!-- End mobile menu toggle-->
-                            </li>
-
-
-                            <li class="list-inline-item"><a href="dashboard.html">Dashboard</a></li>
-                            <li class="list-inline-item active"><a href="admin-deals.html" >Deals</a></li>
-                            <li class="list-inline-item "><a href="payrule.html">Pay Rules</a></li>
-                            <li class="list-inline-item"><a href="payrulereport.html">Reports</a></li>
-                            <li class="list-inline-item"><a href="#">Help</a></li>
-                            <li class="list-inline-item dropdown notification-list">
-                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
-                                   aria-haspopup="false" aria-expanded="false">
-                                   <div>5</div>
-                                   
-                                </a>
-
-
-                              <ul class="dropdown-menu" id="nav">
-                                <div class="notification-container">
-                               <div class="row-0">
-                                    <div class="col-3">
-                                       <a href="#"> <i class="ti-arrow-left back-down-icon"></i></a>
-                                    </div>  
-                                    <div class="col-6">
-                                        <p class="header-noti">Notification</p>
-                                    </div> 
-                                     <div class="col-3">
-                                          <a href="#"> <i class="ion-ios7-arrow-up  up-down-icon" ></i></a>
-                                            <a href="#"><i class="ion-ios7-arrow-down up-down-icon"></i></a>
-                                     </div>
-                                   </div>
-                                   
-                        
-
-                                <div class=" card-padding">
-                                    <div class="card-box">
-                                       <a href="#"> <i class="ti-close close-icon"></i></a>
-                                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                      <p class="p">2 mins ago</p>
-                                    </div>
-                                </div>
-                                 <div class=" card-padding">
-                                    <div class="card-box">
-                                       <a href="#"> <i class="ti-close close-icon"></i></a>
-                                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                      <p class="p">2 mins ago</p>
-                                    </div>
-                                </div>
-                                 <div class=" card-padding">
-                                    <div class="card-box">
-                                       <a href="#"> <i class="ti-close close-icon"></i></a>
-                                      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                      <p class="p">2 mins ago</p>
-                                    </div>
-                                </div>
-
-                                </div>
-                            </ul> 
-                            </li>
-                            <li class="list-inline-item dropdown notification-list">
-                                <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
-                                   aria-haspopup="false" aria-expanded="false">
-                                 <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="span-wel">Welcome</span>
-                                           <span class="span-user">john Daniel</span> &nbsp; &nbsp; <i class="ti-arrow-circle-down down-ti"></i>
-                                    
-                                   
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
-                                  
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                       <i class="fa fa-user"></i> <span>Profile</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="ti-key"></i></i> <span>change Password</span>
-                                    </a>
-
-                                    
-                                    <!-- item-->
-                                    <a href="login.html" class="dropdown-item notify-item">
-                                        <i class="ion-log-in"></i> <span>Logout</span>
-                                    </a>
-                                </div>
-                            </li>
-
-
-                        </ul>
+                </a>
+                <ul class="dropdown-menu" id="nav">
+                  <div class="notification-container">
+                    <div class="row-0">
+                      <div class="col-3">
+                        <a href="#"> <i class="ti-arrow-left back-down-icon"></i></a>
+                      </div>
+                      <div class="col-6">
+                        <p class="header-noti">Notification</p>
+                      </div>
+                      <div class="col-3">
+                        <a href="#"> <i class="ion-ios7-arrow-up  up-down-icon" ></i></a>
+                        <a href="#"><i class="ion-ios7-arrow-down up-down-icon"></i></a>
+                      </div>
                     </div>
-                    <!-- end menu-extras -->
-
-                    <div class="clearfix"></div>
-
-                </div> <!-- end container -->
-            </div>
-            <!-- end topbar-main -->
-        </header>
+                    
+                    
+                    <div class=" card-padding">
+                      <div class="card-box">
+                        <a href="#"> <i class="ti-close close-icon"></i></a>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="p">2 mins ago</p>
+                      </div>
+                    </div>
+                    <div class=" card-padding">
+                      <div class="card-box">
+                        <a href="#"> <i class="ti-close close-icon"></i></a>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="p">2 mins ago</p>
+                      </div>
+                    </div>
+                    <div class=" card-padding">
+                      <div class="card-box">
+                        <a href="#"> <i class="ti-close close-icon"></i></a>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="p">2 mins ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="list-inline-item dropdown notification-list">
+                <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="false" aria-expanded="false">
+                  <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="span-wel">Welcome</span>
+                  <span class="span-user">john Daniel</span> &nbsp; &nbsp; <i class="ti-arrow-circle-down down-ti"></i>
+                  
+                  
+                </a>
+                <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                  
+                  <!-- item-->
+                  <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <i class="fa fa-user"></i> <span>Profile</span>
+                  </a>
+                  <!-- item-->
+                  <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <i class="ti-key"></i></i> <span>change Password</span>
+                  </a>
+                  
+                  <!-- item-->
+                  <a href="login.html" class="dropdown-item notify-item">
+                    <i class="ion-log-in"></i> <span>Logout</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- end menu-extras -->
+          <div class="clearfix"></div>
+          </div> <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+      </header>
       <!-- End Navigation Bar-->
       <div class="wrapper">
-         <div class="container-fluid">
-            <div class="card-box">
-             
-
-             <div class="row">
-                            <div class="col-lg-6"><h5>Add Scenario</h5></div>
-                            <div class="col-lg-6">
-                               <!--   <a href="assumption.html"><button type="button" class="btn btn-light deal-margin">Assumption</button></a> -->
-                                <a href="bonds.html"><button type="button" class="btn btn-light deal-margin ">Bonds</button></a>
-                                <a href="collaterals.html"><button type="button" class="btn btn-light deal-margin active">Collaterals</button></a>
-                                <a href="deals.html"><button type="button" class="btn btn-light deal-margin Deals ">Basic Details</button></a>
-                                 <a href="admin-deals.html"><button type="button" class="btn btn-light deal-margin Deals">Deal List</button></a>
-                            </div>
-                    </div>
-                  
-                      <div class="row div-align-cen">
-                         <h6>GSAMP_2006HE4<span class="red">*</span></h6>
-                      </div>
-
-                        <hr>
-                    
+        <div class="container-fluid">
+          <div class="card-box">
+            
+            <div class="row">
+              <div class="col-lg-6"><h5>Add Scenario</h5></div>
+              <div class="col-lg-6">
+                <!--   <a href="assumption.html"><button type="button" class="btn btn-light deal-margin">Assumption</button></a> -->
+                <a href="bonds.html"><button type="button" class="btn btn-light deal-margin ">Bonds</button></a>
+                <a href="collaterals.html"><button type="button" class="btn btn-light deal-margin active">Collaterals</button></a>
+                <a href="deals.html"><button type="button" class="btn btn-light deal-margin Deals ">Basic Details</button></a>
+                <a href="admin-deals.html"><button type="button" class="btn btn-light deal-margin Deals">Deal List</button></a>
+              </div>
+            </div>
+            
+            <div class="row div-align-cen">
+              <h6>GSAMP_2006HE4<span class="red">*</span></h6>
+            </div>
+            <hr>
+            
+            
+            <div class="row div-align-cen">
+              <h6 >Scenario Name</h6>
+              <span class="line"></span>
+              <div class="col-lg-4">
+                <label for="usr">Deal Name<span class="red">*</span></label>
+                <input type="text" class="form-control" placeholder="GSAMP Trust 2006-HE4">
                 
-               <div class="row div-align-cen">
-               <h6 >Scenario Name</h6>
-             <span class="line"></span>
+              </div>
+              
+            </div>
+            <br>
+            <div class="row div-align-cen">
+              <div class="col-lg-6">
+                <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                  <thead>
+                    <tr>
+                      <th class="width-40per">Yield</th>
+                      <th>Value (Array)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td height="150px" style="vertical-align: inherit;"><select class="form-control" id="sel1">
+                        <option>LIBOR (3mo)</option>
+                        <option>LIBOR (1mo)</option>
+                        <option>LIBOR (2mo)</option>
+                        <option>LIBOR (3mo)</option>
+                        <option>LIBOR (6mo)</option>
+                        <option> LIBOR (1Y)</option>
+                        <option>Prime</option>
+                      </select></td>
+                      <td style="vertical-align: inherit;"><input type="text" class="form-control" placeholder="12.11"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-lg-6">
+                <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                  <thead>
+                    <tr><th class="width-40per">Libor</th><th>value</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> LIBOR (1mo)</td>
+                      <td>12.1</td>
+                    </tr>
+                    <tr>
+                      <td> LIBOR (2mo)</td>
+                      <td>15.56</td>
+                    </tr><tr>
+                    <td> LIBOR (3mo)
+                    </td>
+                    <td>16.1</td>
+                  </tr>
+                  <tr>
+                    <td> LIBOR (6mo)
+                    </td>
+                    <td>78.6</td>
+                  </tr>
+                  <tr>
+                    <td> LIBOR (1Y)
+                    </td>
+                    <td>6.3</td>
+                  </tr>
+                  <tr>
+                    <td>Prime
+                    </td>
+                    <td>6.3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br>
+          <div class="row div-align-cen">
+            <div class="col-lg-6">
+              <h6>Prepayment </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per">CPR/CDR</th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td ><select class="form-control" id="sel1">
+                      <option>CPR</option>
+                      <option>SMM</option>
+                      <option>PDA</option>
+                      <option>SPR</option>
+                      <option>ABS</option>
+                      <option> HEP</option>
+                      <option> PPC</option>
+                      <option> CPP</option>
+                      <option> CPB</option>
+                      <option> Original CPR</option>
+                      <option> Original SMM</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h6>Default
+              </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per">Yield</th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>CDR</option>
+                      <option>SDA</option>
+                      <option>SDR</option>
+                      <option>Original CDR</option>
+                      <option>Original MDR</option>
+                      <option>Original SDR</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+                <br>
+          <div class="row div-align-cen">
+            <div class="col-lg-6">
 
-                  <div class="col-lg-4">
-                     <label for="usr">Deal Name<span class="red">*</span></label>
-                     <input type="text" class="form-control" placeholder="GSAMP Trust 2006-HE4">
-                    
-                  </div>
-                 
-               </div>
-               <br>
+              <select class="form-control" id="sel1">
+                      <option>Recovery Rate </option>
+                      <option>Severity Rate</option>
+                    </select>
 
-               <div class="row div-align-cen">
-                 <div class="col-lg-6">
-                   <table class="table table-auto-res mb-0 table-striped">
-                    <thead>
-                    <tr>
-                     <th>Yield</th>
-                     <th>Value (Array)</th>
-                     </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td><select class="form-control" id="sel1">
-                            <option>LIBOR (3mo)</option>
-                                 <option>LIBOR (1mo)</option>
-                                 <option>LIBOR (2mo)</option>
-                                 <option>LIBOR (3mo)</option>
-                                <option>LIBOR (6mo)</option>
-                                <option> LIBOR (1Y)</option>
-                              </select></td>
-                         <td><input type="text" class="form-control" placeholder="12.11"></td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
-                 <div class="col-lg-6">
-                   <table class="table table-auto-res mb-0 table-striped">
-                    <thead>
-                      <tr><th>Libor</th><th>value</th></tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td> LIBOR (1mo)</td>
-                        <td>12.1</td>
-                      </tr>
-                      <tr>
-                        <td> LIBOR (2mo)</td>
-                        <td>15.56</td>
-                      </tr><tr>
-                        <td> LIBOR (3mo)
-</td>
-                        <td>16.1</td>
-                      </tr>
-                      <tr>
-                        <td> LIBOR (6mo)
-</td>
-                        <td>78.6</td>
-                      </tr>
-                      <tr>
-                        <td> LIBOR (1Y)
-</td>
-                        <td>6.3</td>
-                      </tr>
-                    </tbody>
-                   </table>
-                 </div>
-               </div>
-               <br>
-               <div class="row div-align-cen">
-                 <div class="col-lg-6">
-                  <h6>Prepayment </h6>
-                   <table class="table table-auto-res mb-0 table-striped">
-                    <thead>
-                    <tr>
-                     <th>CPR/CDR</th>
-                     <th>Value (Array)</th>
-                     </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td><select class="form-control" id="sel1">
-                            <option>LIBOR (3mo)</option>
-                                 <option>LIBOR (1mo)</option>
-                                 <option>LIBOR (2mo)</option>
-                                 <option>LIBOR (3mo)</option>
-                                <option>LIBOR (6mo)</option>
-                                <option> LIBOR (1Y)</option>
-                              </select></td>
-                         <td><input type="text" class="form-control" placeholder="12.11"></td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
-                 <div class="col-lg-6">
-                   <h6>Default
- </h6>
-                   <table class="table table-auto-res mb-0 table-striped">
-                    <thead>
-                    <tr>
-                     <th>Yield</th>
-                     <th>Value (Array)</th>
-                     </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td><select class="form-control" id="sel1">
-                            <option>LIBOR (3mo)</option>
-                                 <option>LIBOR (1mo)</option>
-                                 <option>LIBOR (2mo)</option>
-                                 <option>LIBOR (3mo)</option>
-                                <option>LIBOR (6mo)</option>
-                                <option> LIBOR (1Y)</option>
-                              </select></td>
-                         <td><input type="text" class="form-control" placeholder="12.11"></td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
-               </div>
-               <div class="row div-align-cen">
-                 <div class="col-lg-6">
-                  <h6>Recovery Rate </h6>
-                   <table class="table table-auto-res mb-0 table-striped">
-                    <thead>
-                    <tr>
-                     <th>CPR/CDR</th>
-                     <th>Value (Array)</th>
-                     </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td><select class="form-control" id="sel1">
-                            <option>LIBOR (3mo)</option>
-                                 <option>LIBOR (1mo)</option>
-                                 <option>LIBOR (2mo)</option>
-                                 <option>LIBOR (3mo)</option>
-                                <option>LIBOR (6mo)</option>
-                                <option> LIBOR (1Y)</option>
-                              </select></td>
-                         <td><input type="text" class="form-control" placeholder="12.11"></td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
-                 <div class="col-lg-6">
-                   <h6>Recovery Lag
- </h6>
-                   <table class="table table-auto-res mb-0 table-striped">
-                    <thead>
-                    <tr>
-                     <th>Yield</th>
-                     <th>Value (Array)</th>
-                     </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td><select class="form-control" id="sel1">
-                            <option>LIBOR (3mo)</option>
-                                 <option>LIBOR (1mo)</option>
-                                 <option>LIBOR (2mo)</option>
-                                 <option>LIBOR (3mo)</option>
-                                <option>LIBOR (6mo)</option>
-                                <option> LIBOR (1Y)</option>
-                              </select></td>
-                         <td><input type="text" class="form-control" placeholder="12.11"></td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
-               </div>
-                           <div class="col-lg-12 text-center m-t-10">
-                             <a href="deals.html" class="btn btn-save  btn-save-h ">Save </a>
-                             <a href="#" class="btn btn-save btn-save-h text-center">Cancel</a>
-                          
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per">CPR/CDR</th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>Recovery Percent</option>
+                      <option>LIBOR (1mo)</option>
+                      <option>LIBOR (2mo)</option>
+                      <option>LIBOR (3mo)</option>
+                      <option>LIBOR (6mo)</option>
+                      <option> LIBOR (1Y)</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h6>Recovery Lag
+              </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per">Yield</th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>Months</option>
+                      <option>Years</option>
+                      <option>Days</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+                <br>
+                <div class="row div-align-cen">
+            <div class="col-lg-6">
 
-                         
+              <h6>Optional Redemption</h6>
+
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per">CPR/CDR</th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>Yes</option>
+                      <option>No</option>
+                      
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h6>Reinvestment
+              </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per">Yield</th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                       <option>Yes</option>
+                      <option>No</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br>
+          <div class="col-lg-12 text-center m-t-10">
+            <a href="#" class="btn btn-save  btn-save-h ">Save </a>
+            <a href="#" class="btn btn-save btn-save-h text-center">Cancel</a>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+      <!-- end row -->
+    </div>
+    </div> <!-- end container -->
+  </div>
+  <!-- end wrapper -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <i class="ion-ios7-home"></i>  BTM Financial, LLC Canterbury Rd, Denville, NJ 07834, USA  &nbsp; &nbsp; &nbsp;<i class="ion-ios7-telephone-outline"></i> &nbsp; +1 862-437-1138  &nbsp; &nbsp; &nbsp; <i class="ion-ios7-email-outline"></i> &nbsp;cs@btm-financial.com <span class="right"> Copyright &copy; 2017 BTM Financial</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!-- jQuery  -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/waves.js"></script>
+  <script src="assets/js/jquery.slimscroll.js"></script>
+  <script src="assets/js/jquery.scrollTo.min.js"></script>
+  <!-- EASY PIE CHART JS -->
+  <script src="plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
+  <script src="plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+  <script src="assets/pages/easy-pie-chart.init.js"></script>
+  <!-- KNOB JS -->
+  <!--[if IE]>
+  <script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
+  <![endif]-->
   
-                        </div>
-            </div>
-         </div>
-         <!-- end row -->
-         <!-- end row -->
-      </div>
-      </div> <!-- end container -->
-      </div>
-      <!-- end wrapper -->
-      <!-- Footer -->
-      <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                      <i class="ion-ios7-home"></i>  BTM Financial, LLC Canterbury Rd, Denville, NJ 07834, USA  &nbsp; &nbsp; &nbsp;<i class="ion-ios7-telephone-outline"></i> &nbsp; +1 862-437-1138  &nbsp; &nbsp; &nbsp; <i class="ion-ios7-email-outline"></i> &nbsp;cs@btm-financial.com <span class="right"> Copyright &copy; 2017 BTM Financial</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-      <!-- End Footer -->
-      <!-- jQuery  -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/waves.js"></script>
-      <script src="assets/js/jquery.slimscroll.js"></script>
-      <script src="assets/js/jquery.scrollTo.min.js"></script>
-      <!-- EASY PIE CHART JS -->
-      <script src="plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
-      <script src="plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-      <script src="assets/pages/easy-pie-chart.init.js"></script>
-      <!-- KNOB JS -->
-      <!--[if IE]>
-      <script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
-      <![endif]-->
-      
-      
-        <script src="plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-        <script src="plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-      <script src="plugins/jquery-knob/jquery.knob.js"></script>
-      <!-- Circliful -->
-       <script src="plugins/moment/moment.js"></script>
-      <script src="plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
-      <script src="assets/js/jquery.core.js"></script>
-      <script src="assets/js/jquery.app.js"></script>
-      <script>
-         $(function() {
-             $(".knob").knob();
-             $('.circliful-chart').circliful();
-         });
-
-         jQuery('.datepicker-autoclose').datepicker({
-    autoclose: true,
-    todayHighlight: true
-});
-
-              $(".knob").knob();
-                $('.circliful-chart').circliful();
-
-                $(".pop").popover({ trigger: "manual" , html: true, animation:false})
-    .on("mouseenter", function () {
-        var _this = this;
-        $(this).popover("show");
-        $(".popover").on("mouseleave", function () {
-            $(_this).popover('hide');
-        });
-    }).on("mouseleave", function () {
-        var _this = this;
-        setTimeout(function () {
-            if (!$(".popover:hover").length) {
-                $(_this).popover("hide");
-            }
-        }, 300);
-});
-
-$( "#assum" ).click(function() {
+  
+  <script src="plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="plugins/jquery-knob/jquery.knob.js"></script>
+  <!-- Circliful -->
+  <script src="plugins/moment/moment.js"></script>
+  <script src="plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+  <script src="assets/js/jquery.core.js"></script>
+  <script src="assets/js/jquery.app.js"></script>
+  <script>
+  $(function() {
+  $(".knob").knob();
+  $('.circliful-chart').circliful();
+  });
+  jQuery('.datepicker-autoclose').datepicker({
+  autoclose: true,
+  todayHighlight: true
+  });
+  $(".knob").knob();
+  $('.circliful-chart').circliful();
+  $(".pop").popover({ trigger: "manual" , html: true, animation:false})
+  .on("mouseenter", function () {
+  var _this = this;
+  $(this).popover("show");
+  $(".popover").on("mouseleave", function () {
+  $(_this).popover('hide');
+  });
+  }).on("mouseleave", function () {
+  var _this = this;
+  setTimeout(function () {
+  if (!$(".popover:hover").length) {
+  $(_this).popover("hide");
+  }
+  }, 300);
+  });
+  $( "#assum" ).click(function() {
   alert("ddd");
   //$( "#Assumption" ).toggle();
-});
-
-
-     
-
-function hidea() {
-   document.getElementById('Assumption').style.display = "flex";
-    document.getElementById('Periodic').style.display = "none";
-}
-function hidep() {
-   document.getElementById('Periodic').style.display = "flex";
-    document.getElementById('Assumption').style.display = "none";
-
-}
-
-      </script>
-   </body>
+  });
+  
+  function hidea() {
+  document.getElementById('Assumption').style.display = "flex";
+  document.getElementById('Periodic').style.display = "none";
+  }
+  function hidep() {
+  document.getElementById('Periodic').style.display = "flex";
+  document.getElementById('Assumption').style.display = "none";
+  }
+  </script>
+</body>
 </html>
