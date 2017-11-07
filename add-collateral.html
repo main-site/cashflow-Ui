@@ -173,7 +173,11 @@
                 <label for="usr">Scenarios Name<span class="red">*</span></label>
                 <input type="text" class="form-control " value="">
               </div>
-               
+               <div class="col-lg-7">
+                <br>
+                   <label class="radio-inline"><input type="radio" name="loan" value="1" checked="checked"><h6>Loan Data</h6></label>
+<label class="radio-inline"><input type="radio" name="loan" value="2"><h6>Custom Collateral File</h6></label>
+               </div>
              
             </div>
             </br>
@@ -184,11 +188,12 @@
               </div>
               <span class="line line-padding"></span>
             </div> 
-             <div class="row div-align-cen">
-              <div class="col-lg-2">
+
+             <div class="row div-align-cen h" id="deal1">
+              <div class="col-lg-3">
                 <h6>Import Loan Data</h6>
               </div>
-              <div class="col-lg-3 ">
+              <div class="col-lg-2 ">
                 <input type="text" class="form-control " value="">
               </div>
               
@@ -218,12 +223,12 @@
               <div class="col-lg-1">
                 <a href="" class="btn btn-success-s btn-white right"><i class="ti-download"></i></a>
               </div>
-            </div><br> 
-            <div class="row div-align-cen">
-              <div class="col-lg-2">
+            </div>
+            <div class="row div-align-cen h" id="deal2" style="display: none;">
+              <div class="col-lg-3">
                 <h6>Import Custom Collateral File</h6>
               </div>
-              <div class="col-lg-3 ">
+              <div class="col-lg-2">
                 <input type="text" class="form-control " value="">
               </div>
               
@@ -414,6 +419,13 @@ $('.circliful-chart').circliful();
     autoclose: true,
     todayHighlight: true
 });
+ $("input[name$='loan']").click(function() {
+        var test = $(this).val();
+
+        $("div.h").hide();
+        $("#deal" + test).show();
+    });
+
 
 });
 </script>
