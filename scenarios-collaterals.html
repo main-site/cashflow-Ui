@@ -160,6 +160,16 @@
             </div>
             <div class="row div-align-cen">
               <div class="col-lg-2">
+                <label for="usr">Assumption Name<span class="red">*</span></label>
+                <input type="text" class="form-control" placeholder="GSAMP Trust 2006-HE4">
+                
+              </div>
+              <div class="col-lg-4">
+                <br>
+                   <label class="radio-inline" style="display: -webkit-inline-box;"><input type="radio" name="loan" value="1" id="loan1" onclick="javascript:checkbox1();" checked="checked" ><h6>Deal Level Assumptions</h6></label>
+                  <label class="radio-inline" style="display: -webkit-inline-box;"><input type="radio" name="loan" value="2" onclick="javascript:checkbox1();"  ><h6>Loan Level Assumptions</h6></label>
+               </div>
+              <div class="col-lg-2">
                 <label for="usr">Deal Name<span class="red">*</span></label>
                 <select class="form-control" id="sel1">
                   <option> GSAMP Trust 2006-HE 4</option>
@@ -169,64 +179,289 @@
                   <option> GSAMP Trust 2006-HE 8</option>
                 </select>
               </div>
-			  <div class="col-lg-3">
+			  <div class="col-lg-2">
                 <label for="usr">Scenarios Name<span class="red">*</span></label>
-                <input type="text" class="form-control " value="">
+                <select class="form-control" id="sel1">
+                   <option>Select</option>
+                                        <option>Stress</option>
+                                        <option>Base</option>
+                                     </select>
               </div>
                
+              <div class="col-lg-2 import">
+                <a href="" class="btn btn-search width-100">Copy Assumptions</a>
+              </div>
              
+
             </div>
             </br>
             <!-- end row -->
-            <div class="row div-align-cen">
-              <div class="col-lg-4">
-               <!--  <h6>Uploaded Collateral Files</h6> -->
-              </div>
-              <span class="line line-padding"></span>
-            </div> 
-             <div class="row div-align-cen">
-              <div class="col-lg-2">
-                <h6>Import Loan Data</h6>
-              </div>
-              <div class="col-lg-3 ">
-                <input type="text" class="form-control " value="">
-              </div>
-              
-              <div class="col-lg-3 dropdown-form-20">
-                               
-                               <!-- image-preview-filename input [CUT FROM HERE]-->
-            <div class="input-group image-preview">
-                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-                <span class="input-group-btn">
-                    <!-- image-preview-clear button -->
-                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                        <span class="glyphicon glyphicon-remove"></span> Clear
-                    </button>
-                    <!-- image-preview-input -->
-                    <div class="btn btn-default image-preview-input">
-                        <span class="glyphicon glyphicon-folder-open"></span>
-                        <span class="image-preview-input-title">Browse</span>
-                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"> <!-- rename it -->
-                    </div>
-                </span>
+            <div class="div-align-cen">
+            <hr>
+            
+             
+           </div>
+           
+ 
+          <br>
+          <div id="deal">
+<div class="row div-align-cen" >
+            <div class="col-lg-6">
+              <h6>Prepayment </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th >Unit</th>
+                    <th colspan="3">Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cust">
+                    <td ><select class="form-control cus" >
+                      <option>CPR</option>
+                      <option>SMM</option>
+                      <option>PDA</option>
+                      <option>SPR</option>
+                      <option>ABS</option>
+                      <option> HEP</option>
+                      <option> PPC</option>
+                      <option> CPP</option>
+                      <option> CPB</option>
+                      <option> Original CPR</option>
+                      <option> Original SMM</option>
+                      <option value="11">Custom Prepayment Curve</option>
+                    </select></td>
+                    <td colspan="3" ><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                    <tr class="Prepayment" style="display: none;">
+                      <td colspan="3" class="text-left">
+                       <h6> Custom Prepayment</h6>
+                      </td>
+                    </tr>
+                    <tr class="Prepayment" style="display: none;">
+                      <td width="38%">
+                        <label for="s">Custom Prepayment Curve</label>
+                        <select class="form-control cus">
+                      <option>CPR</option>
+                      <option>SMM</option>
+                      <option>PDA</option>
+                      <option>SPR</option>
+                      <option>ABS</option>
+                      <option> HEP</option>
+                      <option> PPC</option>
+                      <option> CPP</option>
+                      <option> CPB</option>
+                      <option> Original CPR</option>
+                      <option> Original SMM</option>
+                      <option value="11">Custom Prepayment Curve</option>
+                    </select> 
+                      </td>
+                      <td><label for="s">Rises from</label>
+                        <input type="text" class="form-control" placeholder="12.11"></td>
+                        <td><label for="s">To</label>
+                        <input type="text" class="form-control" placeholder="12.11"></td>
+                        <td><label for="s">Change over Periods</label>
+                        <input type="text" class="form-control" placeholder="12.11"></td>
+                    </tr>
+                  
+                  
+                </tbody>
+              </table>
             </div>
+            <div class="col-lg-6">
+              <h6>Default
+              </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per"></th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>CDR</option>
+                      <option>SDA</option>
+                      <option>SDR</option>
+                      <option>Original CDR</option>
+                      <option>Original MDR</option>
+                      <option>Original SDR</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+                <br>
+          <div class="row div-align-cen">
+            <div class="col-lg-6">
 
-                        </div>
-                        <div class="col-lg-3 dropdown-form-20">
-                            <a href="" class="btn btn-search  "> Import </a>
-                        </div>
-              <div class="col-lg-1">
-                <a href="" class="btn btn-success-s btn-white right"><i class="ti-download"></i></a>
+              <select class="form-control" id="sel1">
+                      <option>Recovery Rate </option>
+                      <option>Severity Rate</option>
+                    </select>
+
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per"></th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" class="form-control" disabled="" value="Percent"></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h6>Recovery Lag
+              </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per"></th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>Months</option>
+                      <option>Years</option>
+                      <option>Days</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+                <br>
+                <div class="row div-align-cen">
+            <div class="col-lg-6">
+
+              <h6>Optional Redemption</h6>
+
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per"></th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                      <option>Yes</option>
+                      <option>No</option>
+                      
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h6>Reinvestment
+              </h6>
+              <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                <thead>
+                  <tr>
+                    <th class="width-40per"></th>
+                    <th>Value (Array)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><select class="form-control" id="sel1">
+                       <option>Yes</option>
+                      <option>No</option>
+                    </select></td>
+                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <br>
+<div class="row div-align-cen" >
+              <div class="col-lg-6">
+                <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                  <thead>
+                    <tr>
+                      <th class="width-40per">Yield</th>
+                      <th>Value (Array)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td height="150px" style="vertical-align: inherit;"><select class="form-control" id="sel1">
+                        <option>LIBOR (3mo)</option>
+                        <option>LIBOR (1mo)</option>
+                        <option>LIBOR (2mo)</option>
+                        <option>LIBOR (3mo)</option>
+                        <option>LIBOR (6mo)</option>
+                        <option> LIBOR (1Y)</option>
+                        <option>Prime</option>
+                      </select></td>
+                      <td style="vertical-align: inherit;"><input type="text" class="form-control" placeholder="12.11"></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </div></br> 
-            <div class="row div-align-cen">
+              <div class="col-lg-6">
+                <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
+                  <thead>
+                    <tr><th class="width-40per">Libor</th><th>value</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> LIBOR (1mo)</td>
+                      <td>12.1</td>
+                    </tr>
+                    <tr>
+                      <td> LIBOR (2mo)</td>
+                      <td>15.56</td>
+                    </tr><tr>
+                    <td> LIBOR (3mo)
+                    </td>
+                    <td>16.1</td>
+                  </tr>
+                  <tr>
+                    <td> LIBOR (6mo)
+                    </td>
+                    <td>78.6</td>
+                  </tr>
+                  <tr>
+                    <td> LIBOR (1Y)
+                    </td>
+                    <td>6.3</td>
+                  </tr>
+                  <tr>
+                    <td>Prime
+                    </td>
+                    <td>6.3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+          <br>
+          <div class="row div-align-cen" id="loan">
               <div class="col-lg-12">
                   <table class="table table-auto-res mb-0 table-striped">
                         <thead>
                            <tr>
                               <th class="text-left">
                               <input type="checkbox" id="1" class="regular-checkbox"><label for="1"></label>
-                                &nbsp;&nbsp;&nbsp;Assumption Item</th>
+                                &nbsp;&nbsp;&nbsp;Loan No</th>
                               <th colspan="2"> Rate Update</th>
                               <th colspan="2">Prepayment </th>
                               <th colspan="2">Default</th> 
@@ -237,8 +472,8 @@
                         </thead>
                         <tbody>
                            <tr><td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;<a href="edit-scenario.html" target="_blank">Scenario1</td>
-                              <td>text</td>
+                            &nbsp;&nbsp;&nbsp;1215.1515</td>
+                              <td>12.11</td>
                               <td>1234.55</td>
                               <td>CPR</td>
                               <td>121.151</td>
@@ -254,8 +489,8 @@
                               </td>
                            </tr>
                            <tr><td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;<a href="edit-scenario.html" target="_blank">Scenario1</td>
-                              <td>text</td>
+                           &nbsp;&nbsp;&nbsp;1215.1515</td>
+                              <td>12.11</td>
                               <td>1234.55</td>
                               <td>CPR</td>
                               <td>121.151</td>
@@ -271,8 +506,8 @@
                               </td>
                            </tr>
                            <tr><td class="text-left "> <input type="checkbox" id="2" class="regular-checkbox"><label for="2"></label>
-                            &nbsp;&nbsp;&nbsp;<a href="edit-scenario.html" target="_blank">Scenario1</td>
-                              <td>text</td>
+                            &nbsp;&nbsp;&nbsp;1215.1515</td>
+                              <td>12.11</td>
                               <td>1234.55</td>
                               <td>CPR</td>
                               <td>121.151</td>
@@ -295,6 +530,8 @@
 
   
   </div>
+  <br>
+           
   <div class="col-lg-12 text-center m-t-10">
                              <a href="deals.html" class="btn btn-save  btn-save-h ">Save </a>
                              <a href="#" class="btn btn-save btn-save-h text-center">Cancel</a>
@@ -406,11 +643,32 @@ $('.circliful-chart').circliful();
 });
 
 
-  
 
+
+
+  
+var a =$("#loan1").val()
+if(a==1){
+  $("#loan").hide();
+}
 
     
     });
+
+
+function checkbox1(){
+
+  if(document.getElementById('loan1').checked){
+    document.getElementById('loan').style.display = 'none';
+     document.getElementById('deal').style.display = 'block';
+  }else{
+   
+
+      document.getElementById('loan').style.display = 'block';
+     document.getElementById('deal').style.display = 'none';
+  }
+
+}
 </script>
 </body>
 </html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome To CashFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="plugins/morris/morris.css">
+    <link href="plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/font/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+      <div class="topbar-main">
+        <div class="container-fluid">
+          <!-- Logo container-->
+          <div class="logo">
+            <a href="dashboard.html" class="logo">
+              <img src="assets/images/logo.png">
+            </a>
+            
+          </div>
+          
+          <div class="menu-extras topbar-custom">
+            <ul class="list-inline float-right mb-0">
+              <li class="menu-item list-inline-item">
+                
+                <a class="navbar-toggle nav-link">
+                  <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <!-- End mobile menu toggle-->
+              </li>
+              <li class="list-inline-item active"><a href="admin.html">Admin</a></li>
+              <li class="list-inline-item "><a href="dashboard.html">Dashboard</a></li>
+              <li class="list-inline-item "><a href="admin-deals.html">Deals</a></li>
+              <li class="list-inline-item"><a href="payrule.html">Pay Rules</a></li>
+              <li class="list-inline-item"><a href="payrulereport.html">Reports</a></li>
+              <li class="list-inline-item"><a href="#">Help</a></li>
+              <li class="list-inline-item dropdown notification-list">
+                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="false" aria-expanded="false">
+                  <div>5</div>
+                  
+                </a>
+                <ul class="dropdown-menu" id="nav">
+                  <div class="notification-container">
+                    <div class="row-0">
+                      <div class="col-3">
+                        <a href="#"> <i class="ti-arrow-left back-down-icon"></i></a>
+                      </div>
+                      <div class="col-6">
+                        <p class="header-noti">Notification</p>
+                      </div>
+                      <div class="col-3">
+                        <a href="#"> <i class="ion-ios7-arrow-up  up-down-icon" ></i></a>
+                        <a href="#"><i class="ion-ios7-arrow-down up-down-icon"></i></a>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class=" card-padding">
+                      <div class="card-box">
+                        <a href="#"> <i class="ti-close close-icon"></i></a>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="p">2 mins ago</p>
+                      </div>
+                    </div>
+                    <div class=" card-padding">
+                      <div class="card-box">
+                        <a href="#"> <i class="ti-close close-icon"></i></a>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="p">2 mins ago</p>
+                      </div>
+                    </div>
+                    <div class=" card-padding">
+                      <div class="card-box">
+                        <a href="#"> <i class="ti-close close-icon"></i></a>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="p">2 mins ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="list-inline-item dropdown notification-list">
+                <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="false" aria-expanded="false">
+                  <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="span-wel">Welcome</span>
+                  <span class="span-user">john Daniel</span> &nbsp; &nbsp; <i class="ti-arrow-circle-down down-ti"></i>
+                  
+                  
+                </a>
+                <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                  
+                  <!-- item-->
+                  <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <i class="fa fa-user"></i> <span>Profile</span>
+                  </a>
+                  <!-- item-->
+                  <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <i class="ti-key"></i></i> <span>change Password</span>
+                  </a>
+                  
+                  <!-- item-->
+                  <a href="index.html" class="dropdown-item notify-item">
+                    <i class="ion-log-in"></i> <span>Logout</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- end menu-extras -->
+          <div class="clearfix"></div>
+          </div> <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+      </header>
+      <!-- End Navigation Bar-->
+      <div class="wrapper">
+        <div class="container-fluid">
+          <div class="row div-align-cen">
+            <div class="col-lg-12">
+              <div class="card-box">
+                
+                <div class="row">
+                  <div class="col-lg-4"><h5>Admin</h5><br></div>
+                  <div class="col-lg-8">
+                    <a href="#"><button type="button" class="btn btn-light deal-margin">Theme</button></a>
+                    <a href="#"><button type="button" class="btn btn-light deal-margin Deals ">User</button></a>
+                    <a href="admin.html"><button type="button" class="btn btn-light deal-margin Deals active ">Client</button></a>
+                  </div>
+                </div>
+                <form class="form-inline" role="form">
+                  <div class=" col-lg-12">
+                    <a href="addclient.html" class="btn btn-success-s btn-white right"><i class="ti-plus"></i> Deal</a>
+                    <a href="#" class="btn btn-success-s right edit"><i class="ion-trash-a"></i></a>
+                  </div>
+                </form>
+                <hr>
+                <table class="table table-auto-res mb-0 table-striped " >
+                  <thead>
+                    <tr>
+                      
+                      <th class="text-left">
+                        <input type="checkbox" id="1" class="regular-checkbox"/><label for="1"></label>
+                      &nbsp;&nbsp;&nbsp;Name</th>
+                      <th>Email</th>
+                      <th>ClientId</th>
+                      <th>Mobile</th>
+                      <th>Status</th>
+                      <th>FromDate</th>
+                      <th>ToDate</th>
+                      <th>LicenseType</th>
+                      <th>CreatedAt</th>
+                      <th>CreatedBy</th>
+                      
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      
+                      <td class="text-left active"> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
+                    &nbsp;&nbsp;&nbsp;<a href="deals.html">ABC<a></td>
+                    <td class="active">abc@gmail.com</td>
+                    <td class="active">1</td>
+                    <td class="active">8737079995</td>
+                    <td class="active">Active</td>
+                    <td class="active">05/07/17</td>
+                    <td class="active">05/07/18</td>
+                    <td class="active">Trial</td>
+                    <td class="active">05/07/17</td>
+                    <td class="active">abc</td>
+                  </tr>
+                  <tr>
+                    
+                    <td class="text-left"> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
+                    &nbsp;&nbsp;&nbsp;<a href="deals.html">ABC<a></td>
+                    <td class="">abc@gmail.com</td>
+                    <td class="">1</td>
+                    <td class="">8737079995</td>
+                    <td class="">Active</td>
+                    <td class="">05/07/17</td>
+                    <td class="">05/07/18</td>
+                    <td class="">Trial</td>
+                    <td class="">05/07/17</td>
+                    <td class="">abc</td>
+                </tr>
+                <tr>
+                  
+                  <td class="text-left"> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
+                    &nbsp;&nbsp;&nbsp;<a href="deals.html">ABC<a></td>
+                    <td class="">abc@gmail.com</td>
+                    <td class="">1</td>
+                    <td class="">8737079995</td>
+                    <td class="">Active</td>
+                    <td class="">05/07/17</td>
+                    <td class="">05/07/18</td>
+                    <td class="">Trial</td>
+                    <td class="">05/07/17</td>
+                    <td class="">abc</td>
+              </tr>
+              <tr>
+                
+                <td class="text-left"> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
+                    &nbsp;&nbsp;&nbsp;<a href="deals.html">ABC<a></td>
+                    <td class="">abc@gmail.com</td>
+                    <td class="">1</td>
+                    <td class="">8737079995</td>
+                    <td class="">Active</td>
+                    <td class="">05/07/17</td>
+                    <td class="">05/07/18</td>
+                    <td class="">Trial</td>
+                    <td class="">05/07/17</td>
+                    <td class="">abc</td>
+            </tr>
+            <tr>
+              
+              <td class="text-left"> <input type="checkbox" id="2" class="regular-checkbox"/><label for="2"></label>
+                    &nbsp;&nbsp;&nbsp;<a href="deals.html">ABC<a></td>
+                    <td class="">abc@gmail.com</td>
+                    <td class="">1</td>
+                    <td class="">8737079995</td>
+                    <td class="">Active</td>
+                    <td class="">05/07/17</td>
+                    <td class="">05/07/18</td>
+                    <td class="">Trial</td>
+                    <td class="">05/07/17</td>
+                    <td class="">abc</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- end row -->
+</div>
+<!-- end container -->
+</div>
+<!-- end wrapper -->
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="row">
+  <div class="col-12">
+    <i class="ion-ios7-home"></i>  BTM Financial, LLC Canterbury Rd, Denville, NJ 07834, USA  &nbsp; &nbsp; &nbsp;<i class="ion-ios7-telephone-outline"></i> &nbsp; +1 862-437-1138  &nbsp; &nbsp; &nbsp; <i class="ion-ios7-email-outline"></i> &nbsp;cs@btm-financial.com <span class="right"> Copyright &copy; 2017 BTM Financial</span>
+  </div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<!-- EASY PIE CHART JS -->
+<script src="plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
+<script src="plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<script src="assets/pages/easy-pie-chart.init.js"></script>
+<!-- KNOB JS -->
+<!--[if IE]>
+<script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
+<![endif]-->
+<script src="plugins/jquery-knob/jquery.knob.js"></script>
+<!-- Circliful -->
+<script src="plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>
+<script>
+$(function() {
+$(".knob").knob();
+$('.circliful-chart').circliful();
+});
+</script>
+</body>
+</html>

@@ -5434,3 +5434,6 @@ a:hover {
 .width-40per{
   width: 40%;
 }
+.input[type=checkbox], input[type=radio]{
+  vertical-align: middle;
+}

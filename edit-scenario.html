@@ -230,13 +230,13 @@
               <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
                 <thead>
                   <tr>
-                    <th class="width-40per">CPR/CDR</th>
-                    <th>Value (Array)</th>
+                    <th >Unit</th>
+                    <th colspan="3">Value (Array)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td ><select class="form-control" id="sel1">
+                  <tr class="cust">
+                    <td ><select class="form-control cus" >
                       <option>CPR</option>
                       <option>SMM</option>
                       <option>PDA</option>
@@ -248,9 +248,42 @@
                       <option> CPB</option>
                       <option> Original CPR</option>
                       <option> Original SMM</option>
+                      <option value="11">Custom Prepayment Curve</option>
                     </select></td>
-                    <td><input type="text" class="form-control" placeholder="12.11"></td>
+                    <td colspan="3" ><input type="text" class="form-control" placeholder="12.11"></td>
                   </tr>
+                    <tr class="Prepayment" style="display: none;">
+                      <td colspan="3" class="text-left">
+                       <h6> Custom Prepayment</h6>
+                      </td>
+                    </tr>
+                    <tr class="Prepayment" style="display: none;">
+                      <td width="38%">
+                        <label for="s">Custom Prepayment Curve</label>
+                        <select class="form-control cus">
+                      <option>CPR</option>
+                      <option>SMM</option>
+                      <option>PDA</option>
+                      <option>SPR</option>
+                      <option>ABS</option>
+                      <option> HEP</option>
+                      <option> PPC</option>
+                      <option> CPP</option>
+                      <option> CPB</option>
+                      <option> Original CPR</option>
+                      <option> Original SMM</option>
+                      <option value="11">Custom Prepayment Curve</option>
+                    </select> 
+                      </td>
+                      <td><label for="s">Rises from</label>
+                        <input type="text" class="form-control" placeholder="12.11"></td>
+                        <td><label for="s">To</label>
+                        <input type="text" class="form-control" placeholder="12.11"></td>
+                        <td><label for="s">Change over Periods</label>
+                        <input type="text" class="form-control" placeholder="12.11"></td>
+                    </tr>
+                  
+                  
                 </tbody>
               </table>
             </div>
@@ -260,7 +293,7 @@
               <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
                 <thead>
                   <tr>
-                    <th class="width-40per">Yield</th>
+                    <th class="width-40per"></th>
                     <th>Value (Array)</th>
                   </tr>
                 </thead>
@@ -292,7 +325,7 @@
               <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
                 <thead>
                   <tr>
-                    <th class="width-40per">CPR/CDR</th>
+                    <th class="width-40per"></th>
                     <th>Value (Array)</th>
                   </tr>
                 </thead>
@@ -310,7 +343,7 @@
               <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
                 <thead>
                   <tr>
-                    <th class="width-40per">Yield</th>
+                    <th class="width-40per"></th>
                     <th>Value (Array)</th>
                   </tr>
                 </thead>
@@ -336,7 +369,7 @@
               <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
                 <thead>
                   <tr>
-                    <th class="width-40per">CPR/CDR</th>
+                    <th class="width-40per"></th>
                     <th>Value (Array)</th>
                   </tr>
                 </thead>
@@ -358,7 +391,7 @@
               <table class="table table-auto-res table-thcolor mb-0 table-striped table-responsive p-10">
                 <thead>
                   <tr>
-                    <th class="width-40per">Yield</th>
+                    <th class="width-40per"></th>
                     <th>Value (Array)</th>
                   </tr>
                 </thead>
@@ -430,6 +463,19 @@
   $(function() {
   $(".knob").knob();
   $('.circliful-chart').circliful();
+
+   $('.cus').on('change', function() {
+      if ( this.value == '11')
+      {
+        $(".Prepayment").show();
+        $(".cust").hide();
+      }
+      else
+      {
+        $(".Prepayment").hide();
+          $(".cust").show();
+      }
+    });
   });
   jQuery('.datepicker-autoclose').datepicker({
   autoclose: true,
